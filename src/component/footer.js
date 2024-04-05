@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/logo.png";
@@ -9,54 +10,54 @@ export default function Footer() {
   return (
     <>
     
-    <section className="bg-[#f7f7f9] p-[40px] position-relative w-full">
-        <div className="container-flud mx-auto">
-          <div className="row flex justify-center flex-wrap sm:text-left">
-            <div className="col-xl-auto col-lg-3 col-6">
+    <section classNameName="bg-[#f7f7f9] p-[40px] relative w-full">
+        <div classNameName="container-flud mx-auto">
+          <div classNameName="row flex justify-center flex-wrap sm:text-left">
+            <div classNameName="col-xl-auto col-lg-3 col-6">
               <Link
                 href="/"
-                className="me-lg-4 mb-4 me-auto d-flex align-items-center pt-0"
+                classNameName="me-lg-4 mb-4 me-auto d-flex align-items-center pt-0"
               >
                 <Image src={logo} width={119} height={30}></Image>
               </Link>
-              <p className="text-muted w-[75%] leading-6 text-[#8a90a2] mt-4">
+              <p classNameName="text-muted w-[75%] leading-6 text-[#8a90a2] mt-4">
                 Make your web application stand out with high-quality landing
                 page
               </p>
             </div>
-            <div className="col-xl-auto col-lg-3 col-6">
-              <div className="pl-[3rem]">
-                <h6 className="text-sm my-3 font-semibold uppercase">
+            <div classNameName="col-xl-auto col-lg-3 col-6">
+              <div classNameName="pl-[3rem]">
+                <h6 classNameName="text-sm my-3 font-semibold uppercase">
                   Platform
                 </h6>
-                <ul className="list-unstyled">
-                  <li className="my-3">
+                <ul classNameName="list-unstyled">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Demo
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Pricing
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Integrations
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Status
@@ -66,39 +67,39 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-xl-auto col-lg-3 col-6">
-              <div className="pl-[3rem]">
-                <h6 className="text-sm my-3 font-semibold uppercase">
+            <div classNameName="col-xl-auto col-lg-3 col-6">
+              <div classNameName="pl-[3rem]">
+                <h6 classNameName="text-sm my-3 font-semibold uppercase">
                   Knowledge Base
                 </h6>
-                <ul className="list-unstyled">
-                  <li className="my-3">
+                <ul classNameName="list-unstyled">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Blog
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Help Center
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Sales Tools catalog
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       API
@@ -108,31 +109,31 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-xl-auto col-lg-3 col-6">
-              <div className="pl-[3rem]">
-                <h6 className="text-sm my-3 font-semibold uppercase">
+            <div classNameName="col-xl-auto col-lg-3 col-6">
+              <div classNameName="pl-[3rem]">
+                <h6 classNameName="text-sm my-3 font-semibold uppercase">
                   Company
                 </h6>
-                <ul className="list-unstyled">
-                  <li className="my-3">
+                <ul classNameName="list-unstyled">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       About Us
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Career
                     </Link>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <Link
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Contact Us
@@ -142,37 +143,37 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-xl-auto col-lg-3 col-6">
-              <div className="pl-[3rem]">
-                <h6 className="tet-sm my-3 font-semibold uppercase">Legal</h6>
-                <ul className="list-unstyled">
-                  <li className="my-3">
+            <div classNameName="col-xl-auto col-lg-3 col-6">
+              <div classNameName="pl-[3rem]">
+                <h6 classNameName="tet-sm my-3 font-semibold uppercase">Legal</h6>
+                <ul classNameName="list-unstyled">
+                  <li classNameName="my-3">
                     <a
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Usage Policy
                     </a>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <a
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Privacy Policy
                     </a>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <a
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Terms of Service
                     </a>
                   </li>
-                  <li className="my-3">
+                  <li classNameName="my-3">
                     <a
-                      className="text-muted text-[#8a90a2]"
+                      classNameName="text-muted text-[#8a90a2]"
                       href="/"
                     >
                       Trust
@@ -182,27 +183,27 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="m-3 h-1 w-">
+          <div classNameName="m-3 h-1 w-">
             <hr />
           </div>
           
-          <div class="md:text-start  flex justify-around flex-wrap text-center flex-col-reverse lg:flex-row row">
-            <div class="col-lg-9 col-md-8">
-              <p class="pb-0 mb-0 text-wrap md:text-balance text-[#8a90a2]">
+          <div className="md:text-start  flex justify-around flex-wrap text-center flex-col-reverse lg:flex-row row">
+            <div className="col-lg-9 col-md-8">
+              <p className="pb-0 mb-0 text-wrap md:text-balance text-[#8a90a2]">
                 2024 © Prompt. All rights reserved. Crafted by{" "}
-                <Link href="/" className="text-[#495057] hover:text-[#05f]">Coderthemes</Link>
+                <Link href="/" classNameName="text-[#495057] hover:text-[#05f]">Coderthemes</Link>
               </p>
             </div>
-            <div class="md:text-end col-lg-3 col-md-4">
-              <div class="items-end">
-                <ul class="flex flex-wrap space-x-4">
-                  <li className="inline-block me-4">
+            <div classNameName="md:text-end col-lg-3 col-md-4">
+              <div classNameName="items-end">
+                <ul className="flex flex-wrap space-x-4">
+                  <li classNameNameName="inline-block me-4">
                     <Image src={facebook} width={24} height={24}></Image>  
                   </li>
-                  <li class="inline-block me-4">
+                  <li classNameName="inline-block me-4">
                     <Image src={twitter} width={24} height={24}></Image>
                   </li>
-                  <li class="inline-block">
+                  <li classNameName="inline-block">
                     <Image src={linkedin} width={24} height={24}></Image>
                   </li>
                 </ul>
