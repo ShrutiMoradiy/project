@@ -1,7 +1,7 @@
 import React from "react";
-import Features from "../component/Features";
-import Footer from "../component/Footer";
-import SmartPayroll from "../component/SmartPayroll";
+import Features from "./component/Features";
+import Footer from "./component/Footer";
+import SmartPayroll from "./component/SmartPayroll";
 
 import Image from "next/image";
 import Link from "next/link";

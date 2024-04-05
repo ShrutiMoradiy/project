@@ -12,8 +12,9 @@ export default function Footer() {
     
     <section className="bg-[#f7f7f9] p-[40px] relative w-full">
         <div className="container">
-          <div className="row flex justify-center flex-wrap md:items-left sm:text-left">
-            <div className="col-xl-auto col-lg-3 col-6">
+          <div className="row flex lg:justify-center flex-wrap md:items-left sm:text-left">
+            <div className="col-xl-auto col-lg-3 col-6 sm:justify-center">
+              <div className="pl-[3rem]">
               <Link
                 href="/"
                 className="me-lg-4 mb-4 me-auto d-flex align-items-center pt-0"
@@ -24,6 +25,7 @@ export default function Footer() {
                 Make your web application stand out with high-quality landing
                 page
               </p>
+              </div>
             </div>
             <div className="col-xl-auto col-lg-3 col-6">
               <div className="pl-[3rem]">
