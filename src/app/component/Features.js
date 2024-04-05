@@ -9,9 +9,9 @@ export default function Features() {
     <>
       <section className="relative">
         <div className="container px-5 pb-24 mx-auto">
-            <h1 className="text-[1.3125rem] text-[#343a40] font-medium text-center mb-14">
-              Many more powerful features
-            </h1>
+          <h1 className="text-[1.3125rem] text-[#343a40] font-medium text-center mb-14">
+            Many more powerful features
+          </h1>
           <div className="flex sm:text-start flex-wrap">
             <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
               <div className="flex flex-col sm:items-start sm:text-left text-center -mb-1 space-y-2.5">

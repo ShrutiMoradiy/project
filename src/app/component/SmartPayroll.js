@@ -24,48 +24,48 @@ export default function SmartPayroll() {
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <Image src={Performance} width={546} height={361}></Image>
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <div className="flex items-start pb-5">
-              <div className="bg-[#0055ff1f] flex justify-center items-center mx-5 rounded-lg w-[100px] h-[48px]">
-                <Image src={Users} width={24} height={24}></Image>
-              </div>
-              <div className="grid">
-                <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
-                  Improve Employee Experience
-                </h4>
+              <div className="flex items-start pb-5">
+                <div className="bg-[#0055ff1f] flex justify-center items-center mx-5 rounded-lg w-[100px] h-[48px]">
+                  <Image src={Users} width={24} height={24}></Image>
+                </div>
+                <div className="grid">
+                  <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
+                    Improve Employee Experience
+                  </h4>
 
-                <p className="leading-relaxed text-[#8a90a2] mb-4">
-                  Before we dive into why companies must invest in employee
-                  experience (EX), it’s important to understand what this
-                  concept entails.
-                </p>
-                <div className="text-[#0055ff] flex">
-                  <Link href="/">Learn more</Link>
-                  <Image src={arrowright} width={24} height={24}></Image>
+                  <p className="leading-relaxed text-[#8a90a2] mb-4">
+                    Before we dive into why companies must invest in employee
+                    experience (EX), it’s important to understand what this
+                    concept entails.
+                  </p>
+                  <div className="text-[#0055ff] flex">
+                    <Link href="/">Learn more</Link>
+                    <Image src={arrowright} width={24} height={24}></Image>
+                  </div>
                 </div>
               </div>
-            </div>
-            <hr />
-            <div className="flex items-start py-5">
-              <div className="bg-[#3cd2781f] flex justify-center items-center mx-5 rounded-lg w-[48px] h-[48px]">
-                <Image src={UserPlus} width={24} height={24}></Image>
+              <hr />
+              <div className="flex items-start py-5">
+                <div className="bg-[#3cd2781f] flex justify-center items-center mx-5 rounded-lg w-[48px] h-[48px]">
+                  <Image src={UserPlus} width={24} height={24}></Image>
+                </div>
+                <div className="grid">
+                  <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
+                    Hiring & Onboarding
+                  </h4>
+                </div>
               </div>
-              <div className="grid">
-                <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
-                  Hiring & Onboarding
-                </h4>
+              <hr />
+              <div className="flex items-start pt-5">
+                <div className="bg-[#ff784b1f] flex justify-center items-center mx-5 rounded-lg w-[48px] h-[48px]">
+                  <Image src={ChartBar} width={24} height={24}></Image>
+                </div>
+                <div className="grid">
+                  <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
+                    Improve Employee Experience
+                  </h4>
+                </div>
               </div>
-            </div>
-            <hr />
-            <div className="flex items-start pt-5">
-              <div className="bg-[#ff784b1f] flex justify-center items-center mx-5 rounded-lg w-[48px] h-[48px]">
-                <Image src={ChartBar} width={24} height={24}></Image>
-              </div>
-              <div className="grid">
-                <h4 className="text-[#343a40] text-[1.078125rem] font-semibold mb-4">
-                  Improve Employee Experience
-                </h4>
-              </div>
-            </div>
             </div>
           </div>
         </div>
