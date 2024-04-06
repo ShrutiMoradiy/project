@@ -70,8 +70,8 @@ export default function Features() {
               </div>
             </div>
           </div>
-          <div className="mt-12 row flex justify-center">
-            <div className="bg-[#0055ff] w-[160px] h-[42px] col p-2 text-white rounded-md m p-8b-2">
+          <div className="mt-12 flex justify-center">
+            <div className="bg-[#0055ff] w-[160px] h-[42px] col px-3 py-2 text-white rounded-md">
               <Link
                 href="/"
                 className="flex items-center text-[.9375rem] font-medium justify-between"
