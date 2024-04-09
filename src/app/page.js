@@ -10,17 +10,19 @@ import Image from "next/image";
 import arrowup from "/public/arrow-up.svg";
 
 export default function Home() {
+
   const [showArrow, setShowArrow] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 20) {
         setShowArrow(true);
       } else {
         setShowArrow(false);
       }
     }
-
+    
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -41,13 +43,14 @@ export default function Home() {
       <Pricing />
       <Footer />
 
-      <button
-        className="bottom-4 bg-[#0055ff26] fixed right-4 z-10 p-2 rounded w-[42px] show"
-        id="btn-back-to-top"
-        onClick={scrollToTop}
-      >
-        <Image src={arrowup} width={24} height={24} alt="Back to Top" />
-      </button>
+      {showArrow && (
+        <button
+          className="bottom-4 bg-[#0055ff26] fixed right-4 z-10 p-2 rounded w-[42px]"
+          onClick={scrollToTop}
+        >
+          <Image src={arrowup} width={24} height={24} alt="Back to Top" />
+        </button>
+      )}
     </div>
   );
 }

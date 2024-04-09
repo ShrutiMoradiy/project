@@ -27,7 +27,7 @@ function Header() {
   return (
     <>
       <header className="w-full bg-[#f7f7f9]">
-        <div className="container flex flex-wrap justify-around p-5 flex-col md:flex-row items-center">
+        <div className={"container flex flex-wrap justify-around lg:px-40 px-6 py-5 flex-col md:flex-row items-center"}>
           <div
             className={`flex flex-row flex-grow text-center justify-between ${
               showToggle ? "w-full" : "w-full"
