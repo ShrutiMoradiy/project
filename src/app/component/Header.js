@@ -16,14 +16,6 @@ function Header() {
     setShowNavbar(!showNavbar);
   };
 
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
-
   return (
     <>
       <header className="w-full bg-[#f7f7f9]">
