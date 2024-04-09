@@ -8,6 +8,7 @@ import Header from "./component/Header";
 
 import Image from "next/image";
 import arrowup from "/public/arrow-up.svg";
+import CustomerSupport from "./component/CustomerSupport";
 
 export default function Home() {
 
@@ -40,6 +41,7 @@ export default function Home() {
       <Header />
       <SmartPayroll />
       <Features />
+      <CustomerSupport />
       <Pricing />
       <Footer />
 

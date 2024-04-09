@@ -73,6 +73,8 @@ function Header() {
 
                   {showDropdown && (
                     <div
+                    onMouseEnter={() => setShowDropdown(true)}
+                  onMouseLeave={() => setShowDropdown(false)}
                       className={
                         showNavbar
                           ? "absolute grid mt-[80px] p-4 justify-start"
