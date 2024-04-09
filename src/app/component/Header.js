@@ -83,8 +83,8 @@ function Header() {
                     <div
                       className={
                         showNavbar
-                          ? "absolute grid mt-[80px] p-3 justify-start"
-                          : "absolute bg-[#f7f7f9] flex flex-col rounded shadow-md min-w-[150px] mt-28"
+                          ? "absolute grid mt-[80px] p-4 justify-start"
+                          : "absolute bg-[#f7f7f9] flex flex-col rounded shadow-md min-w-[160px] mt-28"
                       }
                     >
                       <Link href="/" className="flex p-2">Getting Started</Link>

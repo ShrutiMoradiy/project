@@ -9,16 +9,16 @@ import linkedin from "/public/linkedin.svg";
 export default function Footer() {
   return (
     <>
-      <section className="bg-[#f7f7f9] p-[40px] relative w-full">
-        <div className="container flex  md:flex-row flex-wrap flex-col sm:mx-0 lg:px-20">
-          <div className="flex-shrink-0 p-4 text-center md:text-left sm:justify-center">
+      <section className="bg-[#f7f7f9] px-[50px] py-6 relative w-full">
+        <div className="container flex pt-5 md:flex-row flex-wrap flex-col sm:mx-0 lg:px-20">
+          <div className="flex-shrink-0 p-4 md:text-left sm:justify-center">
             <Link
               href="/"
-              className="me-lg-4 mb-4 me-auto d-flex align-items-center pt-0"
+              className="w-[75%] mb-4 d-flex align-items-center pt-0"
             >
               <Image src={logo} width={119} height={30}></Image>
             </Link>
-            <p className="text-muted w-[75%] leading-6 text-[#8a90a2] mt-4">
+            <p className="w-[75%] leading-6 text-[#8a90a2] mt-4">
               Make your web application stand out with high-quality landing page
             </p>
           </div>
@@ -125,11 +125,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="m-3 h-1">
+        <div className="m-4 h-1">
           <hr />
         </div>
         <div className="container">
-          <div className="md:text-start  flex justify-around flex-wrap text-center">
+          <div className="md:text-start flex justify-around flex-wrap items-center">
             <div className="col-lg-9 col-md-8">
               <p className="pb-0 mb-0 text-wrap md:text-balance text-[#8a90a2]">
                 2024 © Prompt. All rights reserved. Crafted by{" "}
@@ -140,15 +140,15 @@ export default function Footer() {
             </div>
             <div className="md:text-end col-lg-3 col-md-4">
               <div className="items-end">
-                <ul className="flex flex-wrap space-x-4">
-                  <li className="inline-block me-4">
-                    <Image src={facebook} width={24} height={24}></Image>
-                  </li>
-                  <li className="inline-block me-4">
-                    <Image src={twitter} width={24} height={24}></Image>
+                <ul className="flex flex-wrap lg:mt-0 mt-4 space-x-4">
+                  <li className="inline-block">
+                    <Image src={facebook} width={20} height={20}></Image>
                   </li>
                   <li className="inline-block">
-                    <Image src={linkedin} width={24} height={24}></Image>
+                    <Image src={twitter} width={20} height={20}></Image>
+                  </li>
+                  <li className="inline-block">
+                    <Image src={linkedin} width={20} height={20}></Image>
                   </li>
                 </ul>
               </div>
