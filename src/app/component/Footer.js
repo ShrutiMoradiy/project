@@ -1,12 +1,39 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "/public/logo.png";
 import facebook from "/public/facebook.svg";
 import twitter from "/public/twitter.svg";
 import linkedin from "/public/linkedin.svg";
+import arrowup from "/public/arrow-up.svg";
 
 export default function Footer() {
+  
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 20) {
+        setShowArrow(true);
+      } else {
+        setShowArrow(false);
+      }
+    }
+    
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <section className="bg-[#f7f7f9] px-[50px] py-6 relative w-full">
@@ -23,7 +50,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex-grow flex flex-wrap md:items-left sm:text-left">
-            <div className="lg:w-1/4 md:w-1/2 w-1/2 p-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="text-sm my-3 font-semibold uppercase">Platform</h6>
               <ul className="list-unstyled">
                 <li className="my-3">
@@ -49,7 +76,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="lg:w-1/4 md:w-1/2 w-1/2 p-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="text-sm my-3 font-semibold uppercase">
                 Knowledge Base
               </h6>
@@ -77,7 +104,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="lg:w-1/4 md:w-1/2 w-1/2 p-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="text-sm my-3 font-semibold uppercase">Company</h6>
               <ul className="list-unstyled">
                 <li className="my-3">
@@ -98,7 +125,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="lg:w-1/4 md:w-1/2 w-1/2 p-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="tet-sm my-3 font-semibold uppercase">Legal</h6>
               <ul className="list-unstyled">
                 <li className="my-3">
@@ -156,6 +183,15 @@ export default function Footer() {
           </div>
         </div>
       </section>
+
+      {showArrow && (
+        <button
+          className="bottom-4 bg-[#0055ff26] fixed right-4 z-10 p-2 rounded w-[42px]"
+          onClick={scrollToTop}
+        >
+          <Image src={arrowup} width={24} height={24} alt="Back to Top" />
+        </button>
+      )}
     </>
   );
 }

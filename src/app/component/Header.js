@@ -58,6 +58,7 @@ function Header() {
                 <Link href="/" className={showNavbar ? "p-3 flex" : "px-3"}>
                   Landings
                 </Link>
+               
                 <Link href="/" className={showNavbar ? "p-3 flex" : "px-3"}>
                   pages
                 </Link>
@@ -81,8 +82,8 @@ function Header() {
                           : "absolute bg-[#f7f7f9] flex flex-col rounded shadow-md min-w-[160px] mt-28"
                       }
                     >
-                      <Link href="/" className="flex p-2">Getting Started</Link>
-                      <Link href="/" className="flex p-2">Components</Link>
+                      <Link href="/component/about" className="flex p-2">About Us</Link>
+                      <Link href="/component/contact" className="flex p-2">Contact Us</Link>
                     </div>
                   )}
                 </div>
