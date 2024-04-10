@@ -30,7 +30,7 @@ function Header() {
           }
         >
           <div
-            className={`flex flex-row flex-grow text-center justify-between ${
+            className={`flex flex-row flex-grow text-center col-2 justify-between ${
               showToggle ? "w-full" : "w-full"
             }`}
           >
@@ -46,13 +46,13 @@ function Header() {
               }}
               aria-label={showNavbar ? "Close main menu" : "Open main menu"}
             >
-              <Image src={showNavbar ? close : menutoggle} width={20} height={20}></Image>
+              <Image src={menutoggle} width={20} height={20}></Image>
             </button>
             <nav
               className={`md:flex flex-grow items-center justify-end space-x-4 ${
                 showNavbar
                   ? "fixed top-0 left-0 bottom-0 h-full bg-white w-full transform transition-transform duration-100ms"
-                  : "hidden "
+                  : "hidden"
               }`}
             >
               {showNavbar && (
