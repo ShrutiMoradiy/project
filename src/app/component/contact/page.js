@@ -13,12 +13,12 @@ function page() {
     <>
       <Header />
 
-      <section className="bg-[#f7f7f9] w-full py-24">
+      <section className="bg-[#f7f7f9] w-full py-24 px-5">
         <div className="container justify-center">
           <h1 className="text-[#343a40] text-5xl font-semibold text-center">
             Contact Us
           </h1>
-          <p className="text-[#8a90a2] text-lg text-center">
+          <p className="text-[#8a90a2] text-lg pt-2 text-center">
             Please fill out the following form and we will get back to you
             shortly
           </p>
@@ -26,10 +26,10 @@ function page() {
       </section>
 
       <section className="overflow-hidden py-20">
-        <div className="container xl:px-20 px-10">
-          <div className="flex flex-wrap xl:mx-20">
+        <div className="container lg:px-20 px-10">
+          <div className="flex flex-wrap justify-center items-center xl:mx-20">
             <div className="lg:w-1/2 mx-auto bg-gradient-to-tl from-[#ff784b1f] to-blue-100 rounded-3xl flex flex-col flex-wrap p-8">
-            <h2 className="text-[#343a40] text-[1.546875rem] font-medium text-left">
+              <h2 className="text-[#343a40] text-[1.546875rem] font-medium text-left">
                 Let's Talk Further
               </h2>
               <p className="text-base opacity-[75%] text-left mb-10">
@@ -45,7 +45,7 @@ function page() {
                     <input
                       type="text"
                       placeholder="Your First Name"
-                      className="border border-[dee2e6] text-[#495057] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] xl:w-[200px] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
                     />
                   </div>
                   <div className="xl:w-1/2 w-full mx-auto flex flex-col flex-wrap">
@@ -55,7 +55,7 @@ function page() {
                     <input
                       type="text"
                       placeholder="Your Last Name"
-                      className="border border-[dee2e6] text-[#495057] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] xl:w-[200px] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
                     />
                   </div>
                   <div className="w-full mx-auto flex flex-col flex-wrap">
@@ -92,11 +92,13 @@ function page() {
             </div>
 
             <div className="lg:w-1/2 w-full mt-6 flex flex-col flex-wrap lg:px-20">
-            <h2 className="text-[#343a40] text-[1.546875rem] lg:pt-0 pt-4 font-medium text-left">
-            Get in Touch
+              <h2 className="text-[#343a40] text-[1.546875rem] lg:pt-0 pt-4 font-medium text-left">
+                Get in Touch
               </h2>
               <p className="text-base opacity-[75%] text-left mb-10">
-              We're eager to hear from you! Whether you have questions, feedback, or just want to chat, drop us a line using the following contect details.
+                We're eager to hear from you! Whether you have questions,
+                feedback, or just want to chat, drop us a line using the
+                following contect details.
               </p>
               <div className="w-full lg:my-6 my-2 flex flex-wrap">
                 <div className="bg-[#0055ff1f] flex justify-center items-center mr-5 rounded-lg w-[48px] h-[48px]">
