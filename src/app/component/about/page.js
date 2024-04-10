@@ -2,8 +2,7 @@ import React from "react";
 import Header from "../Header";
 import Image from "next/image";
 import Link from "next/link";
-import payrollimg from "/public/payroll-img.jpg";
-import arrowright from "/public/arrow-right-primary.svg";
+import about from "/public/about.jpg";
 import Footer from "../Footer";
 import team from "/public/team.png";
 import vision from "/public/vision.svg";
@@ -32,8 +31,7 @@ function page() {
         <div className="container xl:px-20 px-10">
           <div className="flex flex-wrap">
             <div className="lg:w-1/4 mx-auto flex flex-col flex-wrap p-8">
-              <span class="border border-t w-[25%] block"></span>
-              <h1 className="text-[#343a40] text-[1.78125rem] font-semibold mt-4 text-left">
+              <h1 className="text-[#343a40] text-[1.78125rem] font-semibold text-left">
                 About Us
               </h1>
             </div>
@@ -65,7 +63,7 @@ function page() {
       <section className="overflow-hidden">
         <div className="container px-10 pb-20 mx-auto">
           <div className="lg:w-4/5 md:w-4/5 mx-auto flex flex-wrap">
-            <div className="lg:w-1/2 md:lg:w-1/2 w-full lg:pr-20 lg:py-6 mb-6 lg:mb-0">
+            <div className="lg:w-1/2 md:lg:w-1/2 w-full lg:pr-20 mb-6 lg:mb-0">
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
                 Build amazing things together
               </h1>
@@ -86,7 +84,7 @@ function page() {
                 relationships and drive conversions.
               </p>
             </div>
-            <Image src={payrollimg} width={546} height={361}></Image>
+            <Image src={about} width={546} height={307}></Image>
           </div>
         </div>
       </section>
@@ -191,7 +189,7 @@ function page() {
               <h3 class="text-lgtext-[#343a40] font-medium pb-2">
                 Co-founder & CMO
               </h3>
-              <p class="text-gray-600 text-justify py-2">
+              <p class="text-gray-600 text-center py-2">
                 User 3, a graduate of the American Business School, is the
                 Co-Founder & CMO of TechMonk. With a focus on disrupting the
                 communications space for brands, he is an expert in achieving

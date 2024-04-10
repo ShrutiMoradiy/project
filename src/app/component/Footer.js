@@ -52,24 +52,24 @@ export default function Footer() {
           <div className="flex-grow flex flex-wrap md:items-left sm:text-left">
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="text-sm my-3 font-semibold uppercase">Platform</h6>
-              <ul className="list-unstyled">
+              <ul>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Demo
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Pricing
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Integrations
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Status
                   </Link>
                 </li>
@@ -80,24 +80,24 @@ export default function Footer() {
               <h6 className="text-sm my-3 font-semibold uppercase">
                 Knowledge Base
               </h6>
-              <ul className="list-unstyled">
+              <ul>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Blog
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Help Center
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Sales Tools catalog
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     API
                   </Link>
                 </li>
@@ -106,19 +106,19 @@ export default function Footer() {
 
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="text-sm my-3 font-semibold uppercase">Company</h6>
-              <ul className="list-unstyled">
+              <ul>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     About Us
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Career
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-muted text-[#8a90a2]" href="/">
+                  <Link className="text-[#8a90a2]" href="/">
                     Contact Us
                   </Link>
                 </li>
@@ -127,24 +127,24 @@ export default function Footer() {
 
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
               <h6 className="tet-sm my-3 font-semibold uppercase">Legal</h6>
-              <ul className="list-unstyled">
+              <ul>
                 <li className="my-3">
-                  <a className="text-muted text-[#8a90a2]" href="/">
+                  <a className="text-[#8a90a2]" href="/">
                     Usage Policy
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-muted text-[#8a90a2]" href="/">
+                  <a className="text-[#8a90a2]" href="/">
                     Privacy Policy
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-muted text-[#8a90a2]" href="/">
+                  <a className="text-[#8a90a2]" href="/">
                     Terms of Service
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-muted text-[#8a90a2]" href="/">
+                  <a className="text-[#8a90a2]" href="/">
                     Trust
                   </a>
                 </li>
