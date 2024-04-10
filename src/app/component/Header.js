@@ -51,7 +51,7 @@ function Header() {
             <nav
               className={`md:flex flex-grow items-center justify-end space-x-4 ${
                 showNavbar
-                  ? "fixed top-0 left-0 bottom-0 h-full bg-white w-full transform transition-transform duration-100ms"
+                  ? "fixed top-0 left-0 bottom-0 h-full bg-white w-full transform transition-transform duration-100"
                   : "hidden"
               }`}
             >
@@ -118,7 +118,7 @@ function Header() {
               </div>
 
               {showNavbar && (
-                <div className="w-full md:hidden flex justify-center relative border-t align-bottom p-3 mt-56">
+                <div className={`w-full md:hidden flex justify-center relative border-t align-bottom p-3 ${showDropdown ? "mt-36" : "mt-56"}`}>
                  <Link
                 href="/"
                 class="flex items-center mt-3 justify-center font-medium text-white uppercase bg-[#05f] border-1 border-[#05f] py-2 px-4 w-[164px] h-[45px] focus:outline-none hover:border-1 hover:border-[#05f] hover:shadow-[0_8px_20px_-6px_rgba(0,85,255,.6)] rounded-3xl"
