@@ -99,7 +99,7 @@ function page() {
             <div className="lg:w-1/3 py-8">
               <div className="flex items-center">
                 <Image src={vision} width={40} height={40} />
-                <h2 className="text-3xl font-semibold px-3"> Our Vision</h2>
+                <h2 className="text-3xl text-[#343a40] font-semibold px-3"> Our Vision</h2>
               </div>
              
                 <p className="text-[#8a90a2] text-base pt-4">
@@ -113,7 +113,7 @@ function page() {
             <div className="lg:w-1/3 mx-auto py-8">
             <div className="flex items-center">
                 <Image src={mission} width={40} height={40} />
-                <h2 className="text-3xl font-semibold px-3"> Our Mission</h2>
+                <h2 className="text-3xl text-[#343a40] font-semibold px-3"> Our Mission</h2>
               </div>
               <p className="text-[#8a90a2] text-base pt-4 lg:px-4">
                 We are on a mission to revolutionize how businesses engage with
@@ -203,6 +203,7 @@ function page() {
           </div>
         </div>
       </section>
+      
       <section className="py-24">
         <div className="container grid justify-items-center">
           <h1 className="text-[#343a40] text-xl md:text-2xl lg:text-5xl font-semibold text-center pb-5">
