@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "../../Header";
 import Footer from "../../Footer";
 import Image from "next/image";
@@ -71,6 +71,33 @@ function page() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const containerRef = useRef(null);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const deltaX = e.pageX - startX;
+    const containerWidth = containerRef.current.offsetWidth;
+    const slideWidth = containerWidth / performance.length;
+    const deltaSlide = Math.round(deltaX / slideWidth);
+    setCurrentSlide((prevSlide) => {
+      const nextSlide = prevSlide - deltaSlide;
+      return Math.max(0, Math.min(nextSlide, performance.length - 1));
+    });
+    setStartX(e.pageX);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
 
   return (
     <>
@@ -172,7 +199,12 @@ function page() {
         </div>
       </section>
 
-      <section className="py-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
+      <section className="py-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36"
+      ref={containerRef}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      >
         <div className="container justify-center">
           <div className="relative flex flex-wrap justify-center items-center">
             {performance.map((items, index) => (
