@@ -109,7 +109,7 @@ function page() {
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                style={{ maxWidth: "100%", height: "auto" }}
               ></Image>
             </div>
             <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:right-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
@@ -130,7 +130,6 @@ function page() {
         </div>
       </section>
 
-
       <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
           <div className="relative my-20 md:mb-36 lg:my-0">
@@ -140,7 +139,7 @@ function page() {
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                style={{ maxWidth: "100%", height: "auto" }}
               ></Image>
             </div>
             <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
@@ -161,7 +160,6 @@ function page() {
         </div>
       </section>
 
-
       <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
           <div className="relative my-20 md:mb-36 lg:my-0">
@@ -171,7 +169,7 @@ function page() {
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                style={{ maxWidth: "100%", height: "auto" }}
               ></Image>
             </div>
             <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:right-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
@@ -192,7 +190,6 @@ function page() {
         </div>
       </section>
 
-
       <section className="w-full pb-44 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
           <div className="relative my-20 md:mb-36 lg:my-0">
@@ -202,7 +199,7 @@ function page() {
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                style={{ maxWidth: "100%", height: "auto" }}
               ></Image>
             </div>
             <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">

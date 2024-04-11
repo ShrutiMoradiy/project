@@ -97,8 +97,8 @@ function Header() {
                       onMouseLeave={() => setShowDropdown(false)}
                       className={
                         showNavbar
-                          ? "absolute grid mt-[80px] p-4 pt-28 justify-start"
-                          : "absolute bg-[#f7f7f9] flex flex-col rounded shadow-md min-w-[160px] mt-[12rem]"
+                          ? "absolute block top-4 p-4 justify-start"
+                          : "absolute bg-[#f7f7f9] block rounded shadow-md min-w-[160px] top-8"
                       }
                     >
                       <Link href="/component/about" className="flex p-2">
@@ -113,6 +113,7 @@ function Header() {
                       <Link href="/component/products/product2" className="flex p-2">
                         Product 2
                       </Link>
+                      
                     </div>
                   )}
                 </div>
