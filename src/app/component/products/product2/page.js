@@ -29,7 +29,7 @@ function page() {
         </div>
       </section>
 
-      <section className="overflow-hidden pt-36 pb-16 lg:mb-0 md:mb-0">
+      <section className="overflow-hidden pt-36">
         <div className="container xl:px-44 px-10">
           <div class="flex justify-center mx-auto pt-7">
             <h1 class="text-2xl lg:text-3xl text-[#343a40] font-semibold mb-3">
@@ -100,26 +100,27 @@ function page() {
         </div>
       </section>
 
-      <section className="w-full pb-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
+      <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative mb-20 md:my-0 lg:my-0">
-            <div className="flex justify-center h-[360px] md:h-[400px] lg:h-[461px]">
+          <div className="relative my-20 md:mb-36 lg:my-0">
+            <div className="flex justify-center">
               <Image
                 src={Performance}
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
+                style={{ maxWidth: '100%', height: 'auto' }}
               ></Image>
             </div>
-            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[60%] md:-bottom-[50%] max-w-[90%] m-7 bg-white mt-10 lg:-mb-[50px] lg:right-0 lg:bottom-0 p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
+            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:right-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
               <h2 className="text:xl lg:text-2xl font-semibold text-[#343a40]">
                 Features 1
               </h2>
-              <p className="text-[#8a90a2] text-sm lg:text-base pt-4">
+              <p className="text-[#8a90a2] text-xs md:text-sm lg:text-base pt-4">
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
-              <ul className="text-[#4b4e58] text-sm lg:text-base font-semibold list-disc p-4 pb-0">
+              <ul className="text-[#4b4e58] text-xs md:text-sm lg:text-base font-semibold list-disc p-4 pb-0">
                 <li>Presentation-level integration</li>
                 <li>Business process integration</li>
                 <li>Data integration</li>
@@ -129,26 +130,28 @@ function page() {
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
+
+      <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 lg:my-0">
-            <div className="flex justify-center h-[360px] md:h-[400px] lg:h-[461px]">
+          <div className="relative my-20 md:mb-36 lg:my-0">
+            <div className="flex justify-center">
               <Image
                 src={Performance}
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
+                style={{ maxWidth: '100%', height: 'auto' }}
               ></Image>
             </div>
-            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[60%] md:-bottom-[50%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
+            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
               <h2 className="text:xl lg:text-2xl font-semibold text-[#343a40]">
                 Features 2
               </h2>
-              <p className="text-[#8a90a2] text-sm lg:text-base pt-4">
+              <p className="text-[#8a90a2] text-xs md:text-sm lg:text-base pt-4">
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
-              <ul className="text-[#4b4e58] text-sm lg:text-base font-semibold list-disc p-4 pb-0">
+              <ul className="text-[#4b4e58] text-xs md:text-sm lg:text-base font-semibold list-disc p-4 pb-0">
                 <li>Presentation-level integration</li>
                 <li>Business process integration</li>
                 <li>Data integration</li>
@@ -158,26 +161,28 @@ function page() {
         </div>
       </section>
 
-      <section className="w-full py-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
+
+      <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 md:my-0 lg:my-0">
-            <div className="flex justify-center h-[360px] md:h-[400px] lg:h-[461px]">
+          <div className="relative my-20 md:mb-36 lg:my-0">
+            <div className="flex justify-center">
               <Image
                 src={Performance}
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
+                style={{ maxWidth: '100%', height: 'auto' }}
               ></Image>
             </div>
-            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[60%] md:-bottom-[50%] max-w-[90%] m-7 bg-white mt-10 lg:-mb-[50px] lg:right-0 lg:bottom-0 p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
+            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:right-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
               <h2 className="text:xl lg:text-2xl font-semibold text-[#343a40]">
                 Features 3
               </h2>
-              <p className="text-[#8a90a2] text-sm lg:text-base pt-4">
+              <p className="text-[#8a90a2] text-xs md:text-sm lg:text-base pt-4">
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
-              <ul className="text-[#4b4e58] text-sm lg:text-base font-semibold list-disc p-4 pb-0">
+              <ul className="text-[#4b4e58] text-xs md:text-sm lg:text-base font-semibold list-disc p-4 pb-0">
                 <li>Presentation-level integration</li>
                 <li>Business process integration</li>
                 <li>Data integration</li>
@@ -186,27 +191,29 @@ function page() {
           </div>
         </div>
       </section>
+
 
       <section className="w-full pb-44 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
           <div className="relative my-20 md:mb-36 lg:my-0">
-            <div className="flex justify-center h-[360px] md:h-[400px] lg:h-[461px]">
+            <div className="flex justify-center">
               <Image
                 src={Performance}
                 width={746}
                 height={461}
                 className="shadow-[0_3px_10px_0_rgb(0_0_0/20%)]"
+                style={{ maxWidth: '100%', height: 'auto' }}
               ></Image>
             </div>
-            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[60%] md:-bottom-[50%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
+            <div className="absolute shadow-[0_3px_10px_0_rgb(0_0_0/20%)] lg:shadow-none -bottom-[40%] md:-bottom-[30%] max-w-[90%] m-7 mt-10 bg-white lg:-mb-[50px] lg:left-0 lg:bottom-0 p-4 md:p-6 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
               <h2 className="text:xl lg:text-2xl font-semibold text-[#343a40]">
                 Features 4
               </h2>
-              <p className="text-[#8a90a2] text-sm lg:text-base pt-4">
+              <p className="text-[#8a90a2] text-xs md:text-sm lg:text-base pt-4">
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </p>
-              <ul className="text-[#4b4e58] text-sm lg:text-base font-semibold list-disc p-4 pb-0">
+              <ul className="text-[#4b4e58] text-xs md:text-sm lg:text-base font-semibold list-disc p-4 pb-0">
                 <li>Presentation-level integration</li>
                 <li>Business process integration</li>
                 <li>Data integration</li>
