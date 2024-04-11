@@ -5,8 +5,6 @@ import Footer from "../../Footer";
 import Image from "next/image";
 import Performance from "/public/perf-img.jpg";
 import mission from "/public/mission.svg";
-import next from "/public/arrow-next.svg";
-import prev from "/public/arrow-prev.svg";
 
 function page() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
