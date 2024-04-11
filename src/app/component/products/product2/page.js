@@ -102,7 +102,7 @@ function page() {
 
       <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 md:mb-36 lg:my-0">
+          <div className="relative my-10 md:mb-10 lg:my-0">
             <div className="flex justify-center">
               <Image
                 src={Performance}
@@ -132,7 +132,7 @@ function page() {
 
       <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 md:mb-36 lg:my-0">
+          <div className="relative my-5 sm:mb-10 lg:my-0">
             <div className="flex justify-center">
               <Image
                 src={Performance}
@@ -162,7 +162,7 @@ function page() {
 
       <section className="w-full pb-10 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 md:mb-36 lg:my-0">
+          <div className="relative my-5 sm:my-10 lg:my-0">
             <div className="flex justify-center">
               <Image
                 src={Performance}
@@ -192,7 +192,7 @@ function page() {
 
       <section className="w-full pb-44 pt-10 md:py-16 lg:pb-28 px-10 md:px-10 lg:px-36">
         <div className="container justify-center">
-          <div className="relative my-20 md:mb-36 lg:my-0">
+          <div className="relative my-5 sm:my-10 md:mb-36 lg:my-0">
             <div className="flex justify-center">
               <Image
                 src={Performance}

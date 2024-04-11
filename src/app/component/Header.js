@@ -113,7 +113,9 @@ function Header() {
                       <Link href="/component/products/product2" className="flex p-2">
                         Product 2
                       </Link>
-                      
+                      <Link href="/component/products/product3" className="flex p-2">
+                        Product 3
+                      </Link>
                     </div>
                   )}
                 </div>
