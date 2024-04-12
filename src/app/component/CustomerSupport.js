@@ -11,7 +11,7 @@ import referral from "/public/referral.svg";
 function CustomerSupport() {
   return (
     <>
-      <section className="bg-[#f7f7f9] w-full">
+      <section className="bg-[#eaeaee] w-full">
         <div className="container py-20">
           <h1 className="text-[1.78125rem] text-[#343a40] font-medium text-center mt-2">
             We build our platform with

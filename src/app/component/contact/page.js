@@ -25,14 +25,14 @@ function page() {
         </div>
       </section>
 
-      <section className="overflow-hidden py-20">
+      <section className="overflow-hidden py-24">
         <div className="container lg:px-20 px-10">
-          <div className="flex flex-wrap justify-center items-center xl:mx-20">
-            <div className="lg:w-1/2 mx-auto bg-gradient-to-tl from-[#ff784b1f] to-blue-100 rounded-3xl flex flex-col flex-wrap p-8">
-              <h2 className="text-[#343a40] text-[1.546875rem] font-medium text-left">
+          <div className="flex lg:flex-nowrap flex-wrap justify-center items-center gap-20">
+            <div className="lg:w-1/2 w-full mx-auto bg-gradient-to-tl from-[#ff784b1f] to-blue-100 rounded-3xl flex flex-col flex-wrap p-5 lg:p-8">
+              <h2 className="text-[#343a40] lg:text-[1.546875rem] text-lg font-medium text-left">
                 Let's Talk Further
               </h2>
-              <p className="text-base opacity-[75%] text-left mb-10">
+              <p className="lg:text-base text-sm opacity-[75%] text-left mb-5 lg:mb-10">
                 Please fill out the following form and we will get back to you
                 shortly
               </p>
@@ -45,7 +45,7 @@ function page() {
                     <input
                       type="text"
                       placeholder="Your First Name"
-                      className="border border-[dee2e6] text-[#495057] xl:w-[200px] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] placeholder:text-sm placeholder:text-[#495057] lg:px-3 p-1 lg:py-2 m-1 rounded"
                     />
                   </div>
                   <div className="xl:w-1/2 w-full mx-auto flex flex-col flex-wrap">
@@ -55,7 +55,7 @@ function page() {
                     <input
                       type="text"
                       placeholder="Your Last Name"
-                      className="border border-[dee2e6] text-[#495057] xl:w-[200px] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] placeholder:text-sm placeholder:text-[#495057] lg:px-3 p-1 lg:py-2 m-1 rounded"
                     />
                   </div>
                   <div className="w-full mx-auto flex flex-col flex-wrap">
@@ -65,7 +65,7 @@ function page() {
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="border border-[dee2e6] text-[#495057] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] placeholder:text-sm placeholder:text-[#495057] lg:px-3 p-1 lg:py-2 m-1 rounded"
                     />
                   </div>
                   <div className="w-full mx-auto flex flex-col flex-wrap">
@@ -76,7 +76,7 @@ function page() {
                       type="text"
                       placeholder="Type Your Message..."
                       rows={5}
-                      className="border border-[dee2e6] text-[#495057] placeholder:text-[#495057] px-3 py-2 m-1 rounded"
+                      className="border border-[dee2e6] text-[#495057] placeholder:text-sm placeholder:text-[#495057] lg:px-3 p-1 lg:py-2 m-1 rounded"
                     />
                   </div>
                   <div className="">
@@ -91,7 +91,7 @@ function page() {
               </form>
             </div>
 
-            <div className="lg:w-1/2 w-full mt-6 flex flex-col flex-wrap lg:px-20">
+            <div className="lg:w-1/2 w-full mt-6 flex flex-col flex-wrap">
               <h2 className="text-[#343a40] text-[1.546875rem] lg:pt-0 pt-4 font-medium text-left">
                 Get in Touch
               </h2>

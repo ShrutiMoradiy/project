@@ -5,21 +5,21 @@ import check from "/public/check.svg";
 
 function Pricing() {
   return (
-    <div>
-      <section class="overflow-hidden">
+    <>
+      <section class="w-full bg-[url('/price-bg.jpg')]">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
+          <div class="flex flex-col text-center justify-center w-full mb-12">
             <h1 class="text-[1.78125rem] text-[#343a40] font-medium mb-2">
               Pricing Plans
             </h1>
-            <p class="text-[#8a90a2!important] text-center">
+            <p class="text-[#727681] text-center">
               Pricing that{" "}
               <span className="text-[#0055ff] font-bold"> works </span> for
               everyone
             </p>
           </div>
-          <div class="flex flex-wrap">
-            <div class="xl:h-[471px] xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded border shadow-[0_0_.25rem_rgba(73,80,87,.05)] hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] border-gray-200 flex flex-col relative overflow-hidden">
+          <div class="flex flex-wrap justify-center">
+            <div class="xl:h-[471px] xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded-md border bg-white shadow-[0_0_1.50rem_rgba(73,80,87,.10)] hover:shadow-[0_0_1rem_0_rgba(0,0,0,35%)] border-gray-200 flex flex-col relative overflow-hidden">
               <h4 class="text-[1.078125rem] text-[#0055ff] text-center font-semibold">
                 Starter
               </h4>
@@ -74,7 +74,7 @@ function Pricing() {
               </Link>
             </div>
 
-            <div class="xl:h-[471px] h-auto xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded border shadow-[0_0_.25rem_rgba(73,80,87,.05)] hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] border-gray-200 flex flex-col relative overflow-hidden">
+            <div class="xl:h-[471px] h-auto xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded-md border bg-white shadow-[0_0_1.50rem_rgba(73,80,87,.10)] hover:shadow-[0_0_1rem_0_rgba(0,0,0,35%)] border-gray-200 flex flex-col relative overflow-hidden">
               <h4 class="text-[1.078125rem] text-[#0055ff] text-center font-semibold">
                 Professional
               </h4>
@@ -129,7 +129,7 @@ function Pricing() {
               </Link>
             </div>
 
-            <div class="xl:h-[471px] h-auto xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded border shadow-[0_0_.25rem_rgba(73,80,87,.05)] hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,.12)] border-gray-200 flex flex-col relative overflow-hidden">
+            <div class="xl:h-[471px] h-auto xl:w-[356px] lg:w-[296px] w-full p-5 mx-3 lg:my-3 my-3 md:my-5 rounded-md border bg-white shadow-[0_0_1.50rem_rgba(73,80,87,.10)] hover:shadow-[0_0_1rem_0_rgba(0,0,0,35%)] border-gray-200 flex flex-col relative overflow-hidden">
               <h4 class="text-[1.078125rem] text-[#0055ff] text-center font-semibold">
                 Enterprise
               </h4>
@@ -186,7 +186,7 @@ function Pricing() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

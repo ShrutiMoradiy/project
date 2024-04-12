@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <>
-      <header className="w-full bg-[#f7f7f9]">
+      <header className="w-full bg-[#000000fa] text-white">
         <div
           className={
             "container flex flex-wrap justify-around lg:px-40 px-6 py-5 flex-col md:flex-row items-center"
@@ -49,9 +49,9 @@ function Header() {
               <Image src={menutoggle} width={20} height={20}></Image>
             </button>
             <nav
-              className={`md:flex flex-grow items-center justify-end space-x-4 z-10 ${
+              className={`md:flex flex-grow items-center justify-end z-10 ${
                 showNavbar
-                  ? "fixed top-0 left-0 bottom-0 h-full bg-white w-full transform transition-transform duration-100"
+                  ? "fixed top-0 left-0 bottom-0 h-full bg-[#000] text-white w-full transform transition-transform duration-100"
                   : "hidden"
               }`}
             >
@@ -98,7 +98,7 @@ function Header() {
                       className={
                         showNavbar
                           ? "absolute block top-4 p-4 justify-start"
-                          : "absolute bg-[#f7f7f9] block rounded shadow-md min-w-[160px] top-8"
+                          : "absolute block bg-[#000000fa] rounded shadow-md min-w-[160px] top-8"
                       }
                     >
                       <Link href="/component/about" className="flex p-2">

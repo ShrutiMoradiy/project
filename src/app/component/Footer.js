@@ -36,7 +36,7 @@ export default function Footer() {
 
   return (
     <>
-      <section className="bg-[#f7f7f9] px-[50px] py-6 relative w-full">
+      <section className="bg-[#000000fa] px-[50px] py-6 relative w-full">
         <div className="container flex pt-5 md:flex-row flex-wrap flex-col sm:mx-0 lg:px-20">
           <div className="flex-shrink-0 p-4 md:text-left sm:justify-center">
             <Link
@@ -45,31 +45,31 @@ export default function Footer() {
             >
               <Image src={logo} width={119} height={30}></Image>
             </Link>
-            <p className="w-[75%] leading-6 text-[#8a90a2] mt-4">
+            <p className="w-[75%] leading-6 text-[#8c8c8c]  mt-4">
               Make your web application stand out with high-quality landing page
             </p>
           </div>
           <div className="flex-grow flex flex-wrap md:items-left sm:text-left">
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
-              <h6 className="text-sm my-3 font-semibold uppercase">Platform</h6>
+              <h6 className="text-white text-sm my-3 font-semibold uppercase">Platform</h6>
               <ul>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Demo
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Pricing
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Integrations
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Status
                   </Link>
                 </li>
@@ -77,27 +77,27 @@ export default function Footer() {
             </div>
 
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
-              <h6 className="text-sm my-3 font-semibold uppercase">
+              <h6 className="text-white text-sm my-3 font-semibold uppercase">
                 Knowledge Base
               </h6>
               <ul>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Blog
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Help Center
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Sales Tools catalog
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     API
                   </Link>
                 </li>
@@ -105,20 +105,20 @@ export default function Footer() {
             </div>
 
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
-              <h6 className="text-sm my-3 font-semibold uppercase">Company</h6>
+              <h6 className="text-white text-sm my-3 font-semibold uppercase">Company</h6>
               <ul>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     About Us
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Career
                   </Link>
                 </li>
                 <li className="my-3">
-                  <Link className="text-[#8a90a2]" href="/">
+                  <Link className="text-[#8c8c8c] " href="/">
                     Contact Us
                   </Link>
                 </li>
@@ -126,25 +126,25 @@ export default function Footer() {
             </div>
 
             <div className="lg:w-1/4 md:w-1/2 w-full p-4">
-              <h6 className="tet-sm my-3 font-semibold uppercase">Legal</h6>
+              <h6 className="text-white tet-sm my-3 font-semibold uppercase">Legal</h6>
               <ul>
                 <li className="my-3">
-                  <a className="text-[#8a90a2]" href="/">
+                  <a className="text-[#8c8c8c] " href="/">
                     Usage Policy
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-[#8a90a2]" href="/">
+                  <a className="text-[#8c8c8c] " href="/">
                     Privacy Policy
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-[#8a90a2]" href="/">
+                  <a className="text-[#8c8c8c] " href="/">
                     Terms of Service
                   </a>
                 </li>
                 <li className="my-3">
-                  <a className="text-[#8a90a2]" href="/">
+                  <a className="text-[#8c8c8c] " href="/">
                     Trust
                   </a>
                 </li>
@@ -158,9 +158,9 @@ export default function Footer() {
         <div className="container">
           <div className="md:text-start flex justify-around flex-wrap items-center">
             <div className="col-lg-9 col-md-8">
-              <p className="pb-0 mb-0 text-wrap md:text-balance text-[#8a90a2]">
+              <p className="pb-0 mb-0 text-wrap md:text-balance text-[#8c8c8c] ">
                 2024 © Prompt. All rights reserved. Crafted by{" "}
-                <Link href="/" className="text-[#495057] hover:text-[#05f]">
+                <Link href="/" className="text-[#0055ff] hover:text-white">
                   Coderthemes
                 </Link>
               </p>
