@@ -14,7 +14,7 @@ function page() {
   const [startX, setStartX] = useState(0);
   const containerRef = useRef(null);
   const [isLastSlide, setIsLastSlide] = useState(false);
- const lastScrollTimeRef = useRef(0);
+  const lastScrollTimeRef = useRef(0);
 
   const performance = [
     {
@@ -101,22 +101,28 @@ function page() {
 
   useEffect(() => {
     let timeoutId;
-  
+
     const handleScroll = (e) => {
       const containerElement = containerRef.current;
       const deltaY = e.deltaY;
-  
+
+      // Check if the current slide is the first one
+      if (currentSlide === 0) {
+        // Scroll the container to the top of the screen
+        containerElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
       const fullScrollThreshold = 200;
-  
       const scrollDistance = Math.abs(deltaY);
-  
       const isFullyScrolled = scrollDistance >= fullScrollThreshold;
-  
-      const scrollChangeFactor = isFullyScrolled ? 4 : 1; 
-  
+      const scrollChangeFactor = isFullyScrolled ? 4 : 1;
+
       if (
         (containerElement.scrollTop === 0 && deltaY > 0 && !isLastSlide) ||
-        (containerElement.scrollTop === containerElement.scrollHeight - containerElement.clientHeight && deltaY < 0 && currentSlide !== 0)
+        (containerElement.scrollTop ===
+          containerElement.scrollHeight - containerElement.clientHeight &&
+          deltaY < 0 &&
+          currentSlide !== 0)
       ) {
         e.preventDefault();
         if (!timeoutId) {
@@ -124,22 +130,25 @@ function page() {
           timeoutId = setTimeout(() => {
             setCurrentSlide((prevSlide) => {
               if (deltaY > 0) {
-                return Math.min(prevSlide + scrollChangeFactor, performance.length - 1);
+                return Math.min(
+                  prevSlide + scrollChangeFactor,
+                  performance.length - 1
+                );
               } else {
                 return Math.max(prevSlide - scrollChangeFactor, 0);
               }
             });
-            timeoutId = null; 
+            timeoutId = null;
           }, 500);
         }
       }
     };
-  
+
     const containerElement = containerRef.current;
     containerElement.addEventListener("wheel", handleScroll);
     return () => {
       containerElement.removeEventListener("wheel", handleScroll);
-      clearTimeout(timeoutId); 
+      clearTimeout(timeoutId);
     };
   }, [currentSlide, performance.length, isLastSlide]);
 
@@ -243,14 +252,16 @@ function page() {
         </div>
       </section>
 
-      <section
-        className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-gradient-to-tr from-[#adadd5] from-40% lg:from-50% to-white to-40% lg:to-50%"
-        ref={containerRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-      >
-        <div className="container justify-center">
+      <section className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-[url('/bg-slide.png')] bg-cover"
+          ref={containerRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          >
+        <div
+          className="container justify-center"
+          
+        >
           <div className="relative flex flex-wrap justify-center items-center lg:mb-12">
             {performance.map((items, index) => (
               <div
