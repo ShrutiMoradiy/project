@@ -8,6 +8,13 @@ import mission from "/public/mission.svg";
 
 function page() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const containerRef = useRef(null);
+  const [isLastSlide, setIsLastSlide] = useState(false);
+ const lastScrollTimeRef = useRef(0);
 
   const performance = [
     {
@@ -44,8 +51,6 @@ function page() {
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const nextSlide = () => {
     setCurrentSlide(
       currentSlide === performance.length - 1 ? 0 : currentSlide + 1
@@ -59,8 +64,6 @@ function page() {
     return () => clearInterval(interval);
   }, [currentSlide]);
 
-  const [windowWidth, setWindowWidth] = useState(0);
-
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -69,10 +72,6 @@ function page() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const containerRef = useRef(null);
 
   const handleMouseDown = (e) => {
     setIsDragging(true);
@@ -96,6 +95,53 @@ function page() {
     setIsDragging(false);
   };
 
+  useEffect(() => {
+    setIsLastSlide(currentSlide === performance.length - 1);
+  }, [currentSlide, performance.length]);
+
+  useEffect(() => {
+    let timeoutId;
+  
+    const handleScroll = (e) => {
+      const containerElement = containerRef.current;
+      const deltaY = e.deltaY;
+  
+      const fullScrollThreshold = 200;
+  
+      const scrollDistance = Math.abs(deltaY);
+  
+      const isFullyScrolled = scrollDistance >= fullScrollThreshold;
+  
+      const scrollChangeFactor = isFullyScrolled ? 4 : 1; 
+  
+      if (
+        (containerElement.scrollTop === 0 && deltaY > 0 && !isLastSlide) ||
+        (containerElement.scrollTop === containerElement.scrollHeight - containerElement.clientHeight && deltaY < 0 && currentSlide !== 0)
+      ) {
+        e.preventDefault();
+        if (!timeoutId) {
+          clearTimeout(timeoutId);
+          timeoutId = setTimeout(() => {
+            setCurrentSlide((prevSlide) => {
+              if (deltaY > 0) {
+                return Math.min(prevSlide + scrollChangeFactor, performance.length - 1);
+              } else {
+                return Math.max(prevSlide - scrollChangeFactor, 0);
+              }
+            });
+            timeoutId = null; 
+          }, 500);
+        }
+      }
+    };
+  
+    const containerElement = containerRef.current;
+    containerElement.addEventListener("wheel", handleScroll);
+    return () => {
+      containerElement.removeEventListener("wheel", handleScroll);
+      clearTimeout(timeoutId); 
+    };
+  }, [currentSlide, performance.length, isLastSlide]);
 
   return (
     <>
@@ -197,11 +243,12 @@ function page() {
         </div>
       </section>
 
-      <section className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-gradient-to-tr from-[#adadd5] from-40% lg:from-50% to-white to-40% lg:to-50%"
-      ref={containerRef}
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
+      <section
+        className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-gradient-to-tr from-[#adadd5] from-40% lg:from-50% to-white to-40% lg:to-50%"
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
       >
         <div className="container justify-center">
           <div className="relative flex flex-wrap justify-center items-center lg:mb-12">
@@ -226,7 +273,7 @@ function page() {
                   <h2 className="text-xl lg:text-2xl font-semibold text-[#343a40]">
                     {items.name}
                   </h2>
-                
+
                   <ul className="text-[#58636c] text-base lg:text-lg font-sans list-disc p-4 pb-0">
                     <li>Presentation-level integration</li>
                     <li>Business process integration</li>
@@ -247,7 +294,9 @@ function page() {
                 <button
                   key={index}
                   className={`p-[5px] mx-1 rounded-full shadow ${
-                    index === currentSlide ? "bg-blue-500" : "lg:bg-gray-300 bg-gray-200"
+                    index === currentSlide
+                      ? "bg-blue-500"
+                      : "lg:bg-gray-300 bg-gray-200"
                   }`}
                   onClick={() => setCurrentSlide(index)}
                 ></button>

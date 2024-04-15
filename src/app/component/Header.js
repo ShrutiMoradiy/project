@@ -23,6 +23,7 @@ function Header() {
 
   return (
     <>
+     
       <header className="w-full bg-[#000000fa] text-white">
         <div
           className={
@@ -98,7 +99,7 @@ function Header() {
                       className={
                         showNavbar
                           ? "absolute block top-4 p-4 justify-start"
-                          : "absolute block bg-[#000000fa] rounded shadow-md min-w-[160px] top-8"
+                          : "absolute block bg-[#000000fa] rounded shadow-md min-w-[160px] top-6 p-2 z-10"
                       }
                     >
                       <Link href="/component/about" className="flex p-2">

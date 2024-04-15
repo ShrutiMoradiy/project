@@ -11,7 +11,7 @@ import Performance from "/public/perf-img.jpg";
 export default function SmartPayroll() {
   return (
     <>
-    <div className="bg-[url('/bg-pyroll.jpg')] bg-cover">
+    
       <section className="overflow-hidden">
         <div className="container px-5 py-20 mx-auto">
           <h1 className="text-[1.78125rem] text-[#343a40] font-medium text-center my-2">
@@ -95,7 +95,7 @@ export default function SmartPayroll() {
           </div>
         </div>
       </section>
-      </div>
+    
     </>
   );
 }
