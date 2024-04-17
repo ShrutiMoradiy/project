@@ -63,3 +63,112 @@
   background: #2563eb;
   transform: skew(0deg, -36deg);
 }
+
+#chevron1 {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 220px;
+  width: 220px;
+  color: white !important;
+  z-index: 1;
+}
+#chevron1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #2563eb;
+  transform: skew(0deg, 36deg);
+}
+#chevron1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #2563eb;
+  transform: skew(0deg, -36deg);
+}
+
+#base {
+  background: #2563eb;
+  height: 150px;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 220px;
+}
+#base:before {
+  border-top: 82px solid #2563eb;
+  border-left: 110px solid transparent;
+  border-right: 110px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  bottom: -81px;
+  width: 0;
+}
+
+
+#pointer {
+  width: 220px;
+  height: 90px;
+  position: relative;
+  background: #2563eb;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid white;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -49px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid #2563eb;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}
+
+#pointer1 {
+  width: 220px;
+  height: 90px;
+  position: relative;
+  background: #2563eb;
+}
+#pointer1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 0px solid white;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}
+#pointer1:before {
+  content: "";
+  position: absolute;
+  right: -49px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid #2563eb;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+}

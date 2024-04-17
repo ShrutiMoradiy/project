@@ -4,15 +4,15 @@ import React from "react";
 function Funnel() {
   return (
     <>
-      <section className="w-full justify-center flex lg:p-28 p-10 pt-0">
-        <div className="container">
+      <section className="w-full justify-center flex flex-col lg:p-28 p-10 pt-0">
             
           <div class="flex justify-center mx-auto pt-7">
             <h1 class="text-2xl lg:text-3xl text-[#343a40] font-semibold mb-10">
               User Funnel
             </h1>
           </div>
-          <div class="flex flex-wrap items-center lg:gap-0 sm:gap-0 gap-16 my-10">
+          
+          <div class="flex items-center lg:gap-0 sm:gap-0 gap-16 my-10">
             <div
               id="chevron"
               className="w-1/2 justify-center flex items-center"
@@ -122,6 +122,22 @@ function Funnel() {
               </div>
             </div>
           </div>
+      </section>
+
+      <section className="pb-20 px-10">
+        <div className="lg:flex hidden justify-center gap-2">
+            <div id="pointer1" className="z-[5] mb-5 pointer flex justify-center items-center"><span className="relative z-10 text-white">Better Reach</span></div>
+            <div id="pointer" className="z-[4] mb-5 flex justify-end items-center"><span className="relative z-10 text-white">Increase conversions</span></div>
+            <div id="pointer" className="z-[3] mb-5 flex justify-center items-center"><span className="relative z-10 text-white">Higher LTV</span></div>
+            <div id="pointer" className="z-[2] mb-5 flex justify-center pl-8 items-center"><span className="relative z-10 text-white">Revenue Growth</span></div>
+            <div id="pointer" className="z-[1] flex justify-end items-center"><span className="relative z-10 text-white">Increased Profitability</span></div>
+        </div>
+        <div className="lg:hidden grid justify-center gap-3">
+            <div id="base" className="z-[5] mb-5 pointer flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Better Reach</span></div>
+            <div id="chevron1" className="z-[4] mb-5 flex justify-end items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increase conversions</span></div>
+            <div id="chevron1" className="z-[3] mb-5 flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Higher LTV</span></div>
+            <div id="chevron1" className="z-[2] mb-5 flex justify-center pl-8 items-center"><span className="relative z-10 text-[20px] font-medium text-white">Revenue Growth</span></div>
+            <div id="chevron1" className="z-[1] flex justify-end items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increased Profitability</span></div>
         </div>
       </section>
     </>
