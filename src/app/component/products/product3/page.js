@@ -8,7 +8,7 @@ import mission from "/public/mission.svg";
 
 function page() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(1);
   const [windowWidth, setWindowWidth] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -107,7 +107,7 @@ function page() {
       const deltaY = e.deltaY;
 
       // Check if the current slide is the first one
-      if (currentSlide === 0) {
+      if (!isLastSlide) {
         // Scroll the container to the top of the screen
         containerElement.scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -118,11 +118,7 @@ function page() {
       const scrollChangeFactor = isFullyScrolled ? 4 : 1;
 
       if (
-        (containerElement.scrollTop === 0 && deltaY > 0 && !isLastSlide) ||
-        (containerElement.scrollTop ===
-          containerElement.scrollHeight - containerElement.clientHeight &&
-          deltaY < 0 &&
-          currentSlide !== 0)
+        (containerElement.scrollTop === 0 && deltaY > 0 && !isLastSlide)
       ) {
         e.preventDefault();
         if (!timeoutId) {
@@ -139,9 +135,10 @@ function page() {
               }
             });
             timeoutId = null;
-          }, 500);
+          }, 300);
         }
       }
+      
     };
 
     const containerElement = containerRef.current;
@@ -252,7 +249,7 @@ function page() {
         </div>
       </section>
 
-      <section className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-[url('/bg-slide.png')] bg-cover"
+      <section className="py-10 md:py-16 lg:py-24 px-10 md:px-10 lg:px-36 bg-[url('/bg-slide.jpg')] bg-cover"
           ref={containerRef}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
@@ -276,11 +273,11 @@ function page() {
                     src={items.src}
                     width={items.width}
                     height={items.height}
-                    className="shadow-[0_3px_10px_0_rgb(0_0_0/40%)]"
+                    className="shadow-[0_3px_10px_0_rgb(0_0_0/40%)] rounded-md"
                   />
                 </div>
 
-                <div className="lg:absolute inherit bg-white mt-10 lg:-mb-[55px] lg:right-20 lg:bottom-0 p-7 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
+                <div className="lg:absolute inherit shadow-[0_3px_10px_0_rgb(0_0_0/40%)] bg-white mt-10 lg:-mb-[55px] lg:right-20 lg:bottom-0 p-7 lg:p-12 border border-[#05f] rounded-xl lg:max-w-[40%]">
                   <h2 className="text-xl lg:text-2xl font-semibold text-[#343a40]">
                     {items.name}
                   </h2>
@@ -307,7 +304,7 @@ function page() {
                   className={`p-[5px] mx-1 rounded-full shadow ${
                     index === currentSlide
                       ? "bg-blue-500"
-                      : "lg:bg-gray-300 bg-gray-200"
+                      : "bg-gray-400"
                   }`}
                   onClick={() => setCurrentSlide(index)}
                 ></button>
