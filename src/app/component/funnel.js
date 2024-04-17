@@ -12,16 +12,16 @@ function Funnel() {
             </h1>
           </div>
           
-          <div class="flex items-center lg:gap-0 sm:gap-0 gap-16 my-10">
+          <div class="flex justify-center items-center lg:gap-0 sm:gap-0 gap-5 my-10">
             <div
               id="chevron"
-              className="w-1/2 justify-center flex items-center"
+              className="w-[100px] h-[100px] sm:h-[150px] sm:w-[150px] justify-center flex items-center"
             >
-              <h1 className="relative z-[100] text-white lg:text-[20px] font-medium items-center">
+              <h1 className="relative z-[100] text-white text-[13px] lg:text-[20px] font-medium items-center">
                 Top of the Funnel
               </h1>
             </div>
-            <div className="sm:w-[60%] w-full grid gap-3 text-sm lg:text-sm -mt-[3.7rem] p-[2.1rem] xl:py-[2.1rem] lg:py-[14px] sm:py-[5px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
+            <div className="sm:w-[60%] w-full grid gap-3 text-xs lg:text-sm -mt-[3.7rem] p-[2.1rem] xl:py-[2.1rem] lg:py-[14px] sm:py-[5px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
               <div className="lg:py-0 py-3">
                 <ul className="list-disc">
                   <li>
@@ -41,16 +41,16 @@ function Funnel() {
             </div>
           </div>
 
-          <div class="flex flex-wrap items-center lg:gap-0 sm:gap-0 gap-20 my-10">
+          <div class="flex justify-center items-center lg:gap-0 sm:gap-0 gap-5 my-10">
             <div
               id="chevron"
-              className="w-1/2 justify-center flex items-center"
+              className="w-[100px] h-[100px] sm:h-[150px] sm:w-[150px] justify-center flex items-center"
             >
-              <h1 className="relative z-[100] text-white lg:text-[20px] font-medium items-center">
+              <h1 className="relative z-[100] text-white text-[13px] lg:text-[20px] font-medium items-center">
                 Middle of the Funnel
               </h1>
             </div>
-            <div className="sm:w-[60%] w-full grid gap-3 text-sm lg:text-sm -mt-[3.7rem] px-[2.1rem] xl:py-[2rem] lg:py-[12px] sm:py-[14px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
+            <div className="sm:w-[60%] w-full grid gap-3 text-xs lg:text-sm -mt-[3.7rem] px-[2.1rem] xl:py-[2rem] lg:py-[12px] sm:py-[14px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
               <div className="py-3">
                 <ul className="list-disc">
                   <li>
@@ -69,16 +69,16 @@ function Funnel() {
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap items-center lg:gap-0 sm:gap-0 gap-20 my-10">
+          <div class="flex justify-center items-center lg:gap-0 sm:gap-0 gap-5 my-10">
             <div
               id="chevron"
-              className="w-1/2 justify-center flex items-center"
+              className="w-[100px] h-[100px] sm:h-[150px] sm:w-[150px] justify-center flex items-center"
             >
-              <h1 className="relative z-[100] text-white lg:text-[20px] font-medium items-center">
+              <h1 className="relative z-[100] text-white text-[13px] lg:text-[20px] font-medium items-center">
                 Bottom of the Funnel
               </h1>
             </div>
-            <div className="sm:w-[60%] w-full grid gap-3 text-sm lg:text-sm -mt-[3.7rem] px-[2.1rem] xl:py-[2.6rem] lg:py-[1.4rem] sm:py-[1.8rem] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
+            <div className="sm:w-[60%] w-full grid gap-3 text-xs lg:text-sm -mt-[3.7rem] px-[2.1rem] xl:py-[2.6rem] lg:py-[1.4rem] sm:py-[1.8rem] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
               <div className="py-3">
                 <ul className="list-disc">
                   <li>
@@ -93,16 +93,16 @@ function Funnel() {
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap items-center lg:gap-0 sm:gap-0 gap-24 my-10">
+          <div class="flex justify-center items-center lg:gap-0 sm:gap-0 gap-5 my-10">
             <div
               id="chevron"
-              className="w-1/2 flex justify-center items-center"
+              className="w-[100px] h-[100px] sm:h-[150px] sm:w-[150px] flex justify-center items-center"
             >
-              <h1 className="relative z-[100] text-white lg:text-[20px] font-medium items-center">
+              <h1 className="relative z-[100] text-white text-[13px] lg:text-[20px] font-medium items-center">
                 Life Time
               </h1>
             </div>
-            <div className="sm:w-[60%] w-full grid gap-3 text-sm lg:text-sm -mt-[3.7rem] lg:px-[2.1rem] xl:py-[2.1rem] lg:py-[4px] sm:px-[1rem] md:py-[1.1rem] md:px-[30px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
+            <div className="sm:w-[60%] w-full grid gap-3 text-xs lg:text-sm -mt-[3.7rem] px-[2.1rem] lg:px-[2.1rem] xl:py-[2.1rem] lg:py-[4px] sm:px-[1rem] md:py-[1.1rem] md:px-[30px] sm:text-xs sm:border-l-0 sm:border-blue-600 sm:border-[2px]">
               <div className="p-0">
                 <ul className="list-disc">
                   <li>
@@ -134,10 +134,10 @@ function Funnel() {
         </div>
         <div className="lg:hidden grid justify-center gap-3">
             <div id="base" className="z-[5] mb-5 pointer flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Better Reach</span></div>
-            <div id="chevron1" className="z-[4] mb-5 flex justify-end items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increase conversions</span></div>
+            <div id="chevron1" className="z-[4] mb-5 flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increase conversions</span></div>
             <div id="chevron1" className="z-[3] mb-5 flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Higher LTV</span></div>
             <div id="chevron1" className="z-[2] mb-5 flex justify-center pl-8 items-center"><span className="relative z-10 text-[20px] font-medium text-white">Revenue Growth</span></div>
-            <div id="chevron1" className="z-[1] flex justify-end items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increased Profitability</span></div>
+            <div id="chevron1" className="z-[1] flex justify-center items-center"><span className="relative z-10 text-[20px] font-medium text-white">Increased Profitability</span></div>
         </div>
       </section>
     </>

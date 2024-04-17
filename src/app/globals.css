@@ -38,8 +38,8 @@
   text-align: center;
   padding: 12px;
   margin-bottom: 6px;
-  height: 150px;
-  width: 150px;
+  /* height: 150px;
+  width: 150px; */
   color: white !important;
   z-index: 1;
 }
