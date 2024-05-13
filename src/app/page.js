@@ -7,6 +7,7 @@ import Header from "./component/Header";
 import CustomerSupport from "./component/CustomerSupport";
 import Mainhead from "./component/Mainhead";
 import Funnel from "./component/funnel";
+import LoyaltyTemp from "./component/LoyaltyTemp";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <Mainhead />
       <SmartPayroll />
+      <LoyaltyTemp />
       <Funnel />
       <Features />
       <CustomerSupport />

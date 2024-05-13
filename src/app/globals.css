@@ -35,13 +35,6 @@
 
 #chevron {
   position: relative;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  /* height: 150px;
-  width: 150px; */
-  color: white !important;
-  z-index: 1;
 }
 #chevron:before {
   content: '';
@@ -62,7 +55,7 @@
   width: 50%;
   background: #2563eb;
   transform: skew(0deg, -36deg);
-}
+}  
 
 #chevron1 {
   position: relative;
