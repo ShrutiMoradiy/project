@@ -3,7 +3,6 @@ import Image from "next/image";
 import logo from "/public/logo.png";
 import loyaltyTemp1 from "/public/LoyaltyTemp1.svg";
 import loyaltyTemp2 from "/public/LoyaltyTemp2.svg";
-import loyaltyTempImg from "/public/LoyaltyTempImg.png";
 
 function LoyaltyTemp() {
   return (
@@ -29,7 +28,7 @@ function LoyaltyTemp() {
                 ></Image>
               </div>
             </div>
-            <div className="px-10 md:w-[60%]">
+            <div className="px-12 md:w-[60%]">
               <h1 className="text-[#3dbb7d] text-2xl font-semibold">
                 Congratulations! You've successfully claimed your reward
               </h1>
