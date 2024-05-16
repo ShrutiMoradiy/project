@@ -13,18 +13,19 @@ function Brands() {
             <h1 className="text-[#222222] text-3xl md:text-[42px] font-bold md:leading-[55px] text-center">
             Choose a Package to your Needs
             </h1>
-            <p className="text-[#787878] text-sm md:text-xl leading-[25px] font-normal mt-5 text-center">No installation, Set up or hidden fees. Everything is included in the price.</p>
+            <p className="text-[#787878] text-sm md:text-xl leading-[25px] font-normal mt-5 text-center mb-5">No installation, Set up or hidden fees. Everything is included in the price.</p>
+          
           </div>
           <div className="flex justify-center flex-wrap gap-4">
            
             <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
               <div className="flex justify-center flex-col items-center">
                 <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Silver</h4>
-                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-2">
+                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-1">
                 ₹25,000
                 </h3>
                 <p className="text-[#787878] text-[15px] leading-[28px] font-normal">billed monthly</p>
-                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-6">Choose Plan</button>
+                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-4">Choose Plan</button>
                 
               </div>
               <ul className="text-[#787878] border-t-2 list-disc ml-5 text-sm md:text-[18px] leading-[23.4px] font-normal mt-5">
@@ -37,57 +38,59 @@ function Brands() {
 
             <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
               <div className="flex justify-center flex-col items-center">
-                <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Silver</h4>
-                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-2">
-                ₹25,000
+                <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Gold</h4>
+                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-1">
+                ₹40,000
                 </h3>
                 <p className="text-[#787878] text-[15px] leading-[28px] font-normal">billed monthly</p>
-                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-6">Choose Plan</button>
+                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-4">Choose Plan</button>
                 
               </div>
               <ul className="text-[#787878] border-t-2 list-disc ml-5 text-sm md:text-[18px] leading-[23.4px] font-normal mt-5">
-                <li className="my-4"><span className="text-[#222222] font-medium">3,000</span> Turns Included</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">1,500</span> Cost per Additional 1000 Turns</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">2,000</span> of Orders / Monthly</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">50,000</span> Total Customers</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">6,000</span> Turns Included</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">1,250</span> Cost per Additional 1000 Turns</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">5,000</span> of Orders / Monthly</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">2,00,000</span> Total Customers</li>
+              </ul>
+            </div>
+
+            <div className="border-2 border-[#019ED1] w-full lg:w-[289px] md:w-1/2 h-[455px] px-5 relative">
+                <span className="bg-[#E6F5FA] border-2 border-b-0 border-[#019ED1] w-[288.5px] -mt-[33px] -ml-[21px] text-[#019ED1] absolute text-[18px] text-center font-medium leading-[30px]">Most Popular</span>
+              <div className="flex justify-center flex-col items-center">
+                <h4 className="text-[#222222] text-xl leading-[30px] font-bold my-4">Platinum</h4>
+                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-1">
+                ₹75,000
+                </h3>
+                <p className="text-[#787878] text-[15px] leading-[28px] font-normal">billed monthly</p>
+                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-4">Choose Plan</button>
+                
+              </div>
+              <ul className="text-[#787878] border-t-2 list-disc ml-5 text-sm md:text-[18px] leading-[23.4px] font-normal mt-5">
+                <li className="my-4"><span className="text-[#222222] font-medium">30,000</span> Turns Included</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">1,000</span> Cost per Additional 1000 Turns</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">15,000</span> of Orders / Monthly</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">5,00,000</span> Total Customers</li>
               </ul>
             </div>
 
             <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
               <div className="flex justify-center flex-col items-center">
-                <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Silver</h4>
-                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-2">
-                ₹25,000
+                <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Enterprise</h4>
+                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-1">
+                ₹1,30,000
                 </h3>
                 <p className="text-[#787878] text-[15px] leading-[28px] font-normal">billed monthly</p>
-                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-6">Choose Plan</button>
+                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-3">Choose Plan</button>
                 
               </div>
               <ul className="text-[#787878] border-t-2 list-disc ml-5 text-sm md:text-[18px] leading-[23.4px] font-normal mt-5">
-                <li className="my-4"><span className="text-[#222222] font-medium">3,000</span> Turns Included</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">1,500</span> Cost per Additional 1000 Turns</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">2,000</span> of Orders / Monthly</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">50,000</span> Total Customers</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">75,000</span> Turns Included</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">750</span> Cost per Additional 1000 Turns</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">50,000</span> of Orders / Monthly</li>
+                <li className="my-4"><span className="text-[#222222] font-medium">10,00,000</span> Total Customers</li>
               </ul>
             </div>
-
-            <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
-              <div className="flex justify-center flex-col items-center">
-                <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">Silver</h4>
-                <h3 className="text-[#222222] text-xl md:text-[32px] leading-[28px] font-[750] mb-2">
-                ₹25,000
-                </h3>
-                <p className="text-[#787878] text-[15px] leading-[28px] font-normal">billed monthly</p>
-                <button className="text-[#019ED1] text-[18px] leading-[21.6px] font-medium w-[248px] h-[55px] border border-[#019ED1] rounded-md my-6">Choose Plan</button>
-                
-              </div>
-              <ul className="text-[#787878] border-t-2 list-disc ml-5 text-sm md:text-[18px] leading-[23.4px] font-normal mt-5">
-                <li className="my-4"><span className="text-[#222222] font-medium">3,000</span> Turns Included</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">1,500</span> Cost per Additional 1000 Turns</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">2,000</span> of Orders / Monthly</li>
-                <li className="my-4"><span className="text-[#222222] font-medium">50,000</span> Total Customers</li>
-              </ul>
-            </div>
+            <button className="bg-[#019ED1] text-white text-[18px] leading-[21.6px] font-medium w-[240px] h-[55px] border border-[#019ED1] rounded-md mt-5">Check all Packages</button>
             
           </div>
         </div>
