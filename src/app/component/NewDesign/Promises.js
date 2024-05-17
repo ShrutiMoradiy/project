@@ -11,7 +11,7 @@ function Promises() {
      <section className="flex justify-center bg-[#001632] mt-16 pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col justify-center items-center mb-12">
-            <h1 className="text-white text-3xl md:text-[42px] font-bold md:leading-[55px] text-center">
+            <h1 className="text-white text-2xl md:text-[35px] lg:text-[42px] font-bold md:leading-[55px] text-center">
             Our Promises
             </h1>
             <p className="text-[#B2B9C1] text-sm md:text-xl leading-[25px] font-normal mt-5 text-center">
@@ -19,7 +19,7 @@ function Promises() {
             </p>
           </div>
           <div className="flex justify-center flex-wrap gap-4">
-            <div className="bg-[#0D2237] border-[#ffffff19] border rounded-md w-full lg:w-1/4 md:w-1/2 h-[455px] p-5">
+            <div className="bg-[#0D2237] border-[#ffffff19] border rounded-md w-full lg:w-1/4 md:w-[40%] p-5">
               <div className="flex justify-between items-center">
                 <h3 className="text-white text-xl md:text-[25px] leading-[30px] font-bold">
                 Easy
@@ -34,7 +34,7 @@ function Promises() {
                 <li className="my-4">White Glove Customer Support</li>
               </ul>
             </div>
-            <div className="bg-[#0D2237] border border-[#ffffff19] rounded-md w-full lg:w-1/4 md:w-1/2 h-[455px] p-5">
+            <div className="bg-[#0D2237] border border-[#ffffff19] rounded-md w-full lg:w-1/4 md:w-[40%] p-5">
               <div className="flex justify-between items-center">
                 <h3 className="text-white text-xl md:text-[25px] leading-[30px] font-bold">
                 Best
@@ -49,7 +49,7 @@ function Promises() {
               </ul>
             </div>
 
-            <div className="bg-[#0D2237] border border-[#ffffff19] rounded-md w-full lg:w-1/4 md:w-1/2 h-[455px] p-5">
+            <div className="bg-[#0D2237] border border-[#ffffff19] rounded-md w-full lg:w-1/4 md:w-[40%] p-5">
               <div className="flex justify-between items-center">
                 <h3 className="text-white text-xl md:text-[25px] leading-[30px] font-bold">
                 Value for Money

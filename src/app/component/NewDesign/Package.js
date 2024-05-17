@@ -6,7 +6,7 @@ function Brands() {
       <section className="flex justify-center pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex justify-center flex-col items-center mb-20">
-            <h1 className="text-[#222222] text-2xl sm:text-[42px] font-bold md:leading-[55px] text-center">
+          <h1 className="text-[#222222] text-2xl md:text-[35px] lg:text-[42px] font-bold md:leading-[55px] text-center">
               Choose a Package to your Needs
             </h1>
             <p className="text-[#787878] text-sm md:text-xl leading-[25px] font-normal mt-5 text-center mb-5">
@@ -20,8 +20,8 @@ function Brands() {
               Yearly Billing
             </div>
           </div>
-          <div className="flex justify-center flex-wrap gap-4">
-            <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
+          <div className="flex justify-center flex-wrap gap-4"> 
+            <div className="border-2 border-[#D2D5DD] w-full xl:w-[289px] lg:w-[40%] sm:w-[280px] h-[455px] p-5">
               <div className="flex justify-center flex-col items-center">
                 <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">
                   Silver
@@ -56,7 +56,7 @@ function Brands() {
               </ul>
             </div>
 
-            <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5 mb-10">
+            <div className="border-2 border-[#D2D5DD] w-full xl:w-[289px] lg:w-[40%] sm:w-[280px] h-[455px] p-5 mb-10">
               <div className="flex justify-center flex-col items-center">
                 <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">
                   Gold
@@ -91,7 +91,7 @@ function Brands() {
               </ul>
             </div>
 
-            <div className="border-2 border-[#019ED1] w-full lg:w-[289px] md:w-1/2 h-[455px] px-5 relative">
+            <div className="border-2 border-[#019ED1] w-full xl:w-[289px] lg:w-[40%] sm:w-[280px] h-[455px] px-5 relative">
               <span className="bg-[#E6F5FA] border-2 border-b-0 border-[#019ED1] w-full -mt-[33px] -ml-[20px] text-[#019ED1] absolute text-[18px] text-center font-medium leading-[30px]">
                 Most Popular
               </span>
@@ -129,7 +129,7 @@ function Brands() {
               </ul>
             </div>
 
-            <div className="border-2 border-[#D2D5DD] w-full lg:w-[289px] md:w-1/2 h-[455px] p-5">
+            <div className="border-2 border-[#D2D5DD] w-full xl:w-[289px] lg:w-[40%] sm:w-[280px] h-[455px] p-5">
               <div className="flex justify-center flex-col items-center">
                 <h4 className="text-[#222222] text-xl leading-[30px] font-bold mb-4">
                   Enterprise
@@ -165,7 +165,7 @@ function Brands() {
             </div>
           </div>
           <div className="flex justify-center flex-col items-center mt-10">
-            <button className="bg-[#019ED1] text-white text-[18px] leading-[21.6px] font-medium w-[240px] h-[55px] border border-[#019ED1] rounded-md">
+          <button className="bg-[#019ED1] text-white text-sm md:text-[16px] lg:text-[18px] leading-[21.6px] font-medium w-[150px] md:w-[180px] lg:w-[213px] h-[45px] md:h-[55px] border border-[#019ED1] rounded-md my-3">
               Check all Packages
             </button>
           </div>

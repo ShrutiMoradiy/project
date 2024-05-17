@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import TechEffectImg from "../../../../public/TechEffectImg.svg";
-import Polygon from "../../../../public/Polygon.svg";
 
 function TechEffect() {
   return (
@@ -9,7 +7,7 @@ function TechEffect() {
       <section className="bg-[#E6F5FA] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container flex justify-center flex-wrap">
           <div className="w-full lg:w-[40%] flex justify-center flex-col items-center">
-            <Image src={TechEffectImg} alt="IMG" width={509} height={605} />
+            <Image src='/TechEffectImg.svg' alt="IMG" width={509} height={605} />
           </div>
           <div className="w-full lg:w-[60%] flex flex-col">
             <h1 className="text-[#222222] text-xl md:text-[30px] lg:text-[42px] font-bold leading-[30px] md:leading-[40px] lg:leading-[55px] mb-2">
@@ -21,7 +19,7 @@ function TechEffect() {
             <div className="flex flex-wrap sm:flex-nowrap gap-4 mb-6">
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                     The Techmonk Effect
                   </h1>
@@ -33,7 +31,7 @@ function TechEffect() {
               </div>
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                   Higher LTV
                   </h1>
@@ -46,7 +44,7 @@ function TechEffect() {
             <div className="flex flex-wrap sm:flex-nowrap gap-4 mb-6">
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                   Better Reach
                   </h1>
@@ -57,7 +55,7 @@ function TechEffect() {
               </div>
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                   Happier Customers
                   </h1>
@@ -70,7 +68,7 @@ function TechEffect() {
             <div className="flex flex-wrap sm:flex-nowrap gap-4 mb-6">
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                   Improved Efficiency
                   </h1>
@@ -81,7 +79,7 @@ function TechEffect() {
               </div>
               <div className="w-full sm:w-1/2">
                 <div className="flex">
-                  <Image src={Polygon} alt="IMG" width={8} height={8} />
+                  <Image src='/Polygon.svg' alt="IMG" width={8} height={8} />
                   <h1 className="text-[#222222] text-sm md:text-[18px] lg:text-[20px] font-bold m-2">
                   Brand Virality
                   </h1>

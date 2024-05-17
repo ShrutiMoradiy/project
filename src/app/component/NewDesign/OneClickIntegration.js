@@ -22,7 +22,7 @@ function NewDesign() {
             </p>
           </div>
           <div className="flex justify-center flex-wrap gap-4">
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -36,7 +36,7 @@ function NewDesign() {
                 Listen to all customer events from your Shopify store
               </p>
             </div>
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-1 py-4">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -50,7 +50,7 @@ function NewDesign() {
                 Raise Tickets and update customers on the status of their ticket
               </p>
             </div>
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -71,7 +71,7 @@ function NewDesign() {
               </p>
             </div>
 
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -85,7 +85,7 @@ function NewDesign() {
                 Engage with your customers on WhatsApp with Gupshup
               </p>
             </div>
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -100,7 +100,7 @@ function NewDesign() {
               </p>
             </div>
 
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -114,7 +114,7 @@ function NewDesign() {
                 Engage with customers through personalized emails
               </p>
             </div>
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
@@ -128,7 +128,7 @@ function NewDesign() {
                 Send WhatsApp messages through WATI
               </p>
             </div>
-            <div className="border rounded-md w-full lg:w-1/4 md:w-1/2 h-[165px] p-5">
+            <div className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5">
               <div className="flex items-center">
                 <span className="relative p-3">
                   <span className="absolute inset-0 border-2 rounded transform rotate-45"></span>
