@@ -1,18 +1,22 @@
 import React from 'react';
-import OneClickIntegration from "../NewDesign/OneClickIntegration";
-import Promises from "../NewDesign/Promises";
-import Brands from "../NewDesign/Brands";
-import Package from "../NewDesign/Package";
+import OneClickIntegration from "./OneClickIntegration";
+import Promises from "./Promises";
+import Brands from "./Brands";
+import Package from "./Package";
+import ScheduleDemo from "./ScheduleDemo";
 import Header from "../../component/Header";
+import TechEffect from './TechEffect';
 
 export default function NewDesign() {
   return (
     
       <>
          <Header />
+         <TechEffect />
         <OneClickIntegration />
         <Promises />
         <Package />
+        <ScheduleDemo />
       </>
     
   )

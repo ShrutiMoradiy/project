@@ -3,6 +3,7 @@ import Image from "next/image";
 import Easy from "../../../../public/easy.svg";
 import Best from "../../../../public/best.svg";
 import ValueforMoney from "../../../../public/money.svg";
+import Polygon from "../../../../public/Polygon.svg";
 
 function Promises() {
   return (
