@@ -8,6 +8,7 @@ import Header from "../../component/Header";
 import TechEffect from './TechEffect';
 import Footer from './Footer';
 import Marketing from './Marketing';
+import Reviews from './Reviews';
 
 export default function NewDesign() {
   return (
@@ -18,6 +19,7 @@ export default function NewDesign() {
          <TechEffect />
         <OneClickIntegration />
         <Promises />
+        <Reviews />
         <Package />
         <ScheduleDemo />
         <Footer />
