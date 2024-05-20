@@ -1,6 +1,7 @@
 import React from 'react';
 import OneClickIntegration from "./OneClickIntegration";
 import Promises from "./Promises";
+import OmniChannel from "./OmniChannel";
 import Package from "./Package";
 import ScheduleDemo from "./ScheduleDemo";
 import Header from "../../component/Header";
@@ -14,6 +15,7 @@ export default function NewDesign() {
     
       <>
          <Header />
+         <OmniChannel />
          <Marketing />
          <TechEffect />
         <OneClickIntegration />
