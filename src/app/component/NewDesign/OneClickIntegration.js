@@ -1,7 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 function NewDesign() {
   const ecosystem = [
@@ -49,17 +49,39 @@ function NewDesign() {
     },
   ];
 
+  const variantcontainer = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  const cardAnimation = {
+    hidden: { y: 100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.2 },
+    },
+  };
+
   const { scrollY } = useScroll();
   const threshold = 0.5;
   const animateOnScroll = scrollY >= threshold;
-  const cardAnimation = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
 
   return (
     <>
-      <section className="flex justify-center pt-[6rem] pb-[2rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <motion.section
+        variants={variantcontainer}
+        initial="hidden"
+        whileInView="visible"
+        animate={animateOnScroll ? "visible" : "hidden"}
+        className="flex justify-center pt-[6rem] pb-[2rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]"
+      >
         <div className="container">
           <div className="flex flex-col justify-center items-center mb-12">
             <h1 className="text-[#222222] text-2xl md:text-[35px] lg:text-[42px] font-bold md:leading-[55px] text-center">
@@ -69,16 +91,11 @@ function NewDesign() {
               with major players in the E-commerce Ecosystem
             </p>
           </div>
-          <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          animate={animateOnScroll ? "visible" : "hidden"}
-          variants={cardAnimation}
-          className="flex justify-center flex-wrap gap-4">
+          <div className="flex justify-center flex-wrap gap-4">
             {ecosystem.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
-                
+                variants={cardAnimation}
                 className="border rounded-md w-full xl:w-1/4 lg:w-[30%] sm:w-[45%] p-5"
               >
                 <div className="flex items-center">
@@ -93,11 +110,11 @@ function NewDesign() {
                 <p className="text-[#787878] text-sm md:text-[16px] lg:text-[18px] leading-[23.4px] font-normal mt-5">
                   {item.detail}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
