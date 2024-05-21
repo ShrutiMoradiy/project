@@ -57,7 +57,7 @@ function NewDesign() {
       transition: {
         delayChildren: 0.5,
         staggerChildren: 0.2,
-        duration: 0.8
+        duration: 0.8,
       },
     },
   };
@@ -76,13 +76,7 @@ function NewDesign() {
 
   return (
     <>
-      <motion.section
-        variants={variantcontainer}
-        initial="hidden"
-        whileInView="visible"
-        animate={animateOnScroll ? "visible" : "hidden"}
-        className="flex justify-center pt-[6rem] pb-[2rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]"
-      >
+      <section className="flex justify-center pt-[6rem] pb-[2rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col justify-center items-center mb-12">
             <h1 className="text-[#222222] text-2xl md:text-[35px] lg:text-[42px] font-bold md:leading-[55px] text-center">
@@ -92,7 +86,13 @@ function NewDesign() {
               with major players in the E-commerce Ecosystem
             </p>
           </div>
-          <div className="flex justify-center flex-wrap gap-4">
+          <motion.div
+            variants={variantcontainer}
+            initial="hidden"
+            whileInView="visible"
+            animate={animateOnScroll ? "visible" : "hidden"}
+            className="flex justify-center flex-wrap gap-4"
+          >
             {ecosystem.map((item, index) => (
               <motion.div
                 key={index}
@@ -113,9 +113,9 @@ function NewDesign() {
                 </p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </motion.section>
+      </section>
     </>
   );
 }

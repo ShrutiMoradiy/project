@@ -9,12 +9,14 @@ import TechEffect from './TechEffect';
 import Footer from './Footer';
 import Marketing from './Marketing';
 import Reviews from './Reviews';
+import GenAIChat from './GenAIChat';
 
 export default function NewDesign() {
   return (
     
       <>
          <Header />
+         <GenAIChat />
          <OmniChannel />
          <Marketing />
          <TechEffect />
