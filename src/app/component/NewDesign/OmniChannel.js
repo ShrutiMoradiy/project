@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 // import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
@@ -6,8 +6,8 @@ import { useScroll } from "framer-motion";
 
 const OmniChannel = () => {
   const { scrollY } = useScroll();
-const threshold = 0.5; // Adjust as needed
-const animateOnScroll = scrollY >= threshold;
+  const threshold = 0.5;
+  const animateOnScroll = scrollY >= threshold;
   const emailAnimation = {
     hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -78,12 +78,25 @@ const animateOnScroll = scrollY >= threshold;
 
   const WhatsappCard = (
     <motion.div
+    className="flex items-center flex-col lg:items-start"
+    initial="hidden"
+    whileInView="visible"
+    animate={animateOnScroll ? "visible" : "hidden"}
+    variants={smsAnimation}
+  >
+    <img src="/Chain.png" alt="chain" className="lg:hidden" />
+    <img
+          src="/Channel.png"
+          alt="chain"
+          width="35"
+          // height="600"
+          className="z-10 absolute -top-[8rem] transform -translate-x-1/2 hidden lg:flex"
+        />
+
+    <div
       id="whatsapp"
       className="relative w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
-      initial="hidden"
-      whileInView="visible"
-      animate={animateOnScroll ? "visible" : "hidden"}
-      variants={whatsappAnimation}>
+    >
       <img
         src="/websitesvgs/marketing/whatsApp.svg"
         alt=""
@@ -112,17 +125,22 @@ const animateOnScroll = scrollY >= threshold;
           <span className="text-[#787878]">Need help? Let us know! 😊</span>
         </p>
       </div>
+      </div>
     </motion.div>
   );
 
   const WebNotificationCard = (
     <motion.div
+    className="flex items-center flex-col"
+    initial="hidden"
+    whileInView="visible"
+    animate={animateOnScroll ? "visible" : "hidden"}
+    variants={smsAnimation}
+  >
+    <img src="/Chain.png" alt="chain" className="lg:hidden" />
+    <div
       id="web-notification"
       className="relative lg:top-[-13rem] w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
-      initial="hidden"
-      whileInView="visible"
-      animate={animateOnScroll ? "visible" : "hidden"}
-      variants={webNotificationAnimation}
     >
       <img
         src="/websitesvgs/marketing/notification.svg"
@@ -160,44 +178,51 @@ const animateOnScroll = scrollY >= threshold;
       <p className="pt-2 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
         Need help? Let us know! 🎶
       </p>
+    </div>
     </motion.div>
   );
 
   const SmsCard = (
     <motion.div
-      id="sms"
-      className="relative w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      className="flex items-center flex-col lg:items-start"
       initial="hidden"
       whileInView="visible"
       animate={animateOnScroll ? "visible" : "hidden"}
       variants={smsAnimation}
     >
-      <img
-        src="/websitesvgs/marketing/sms.svg"
-        alt=""
-        className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
-      />
-      <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        Day 7
-      </p>
+      <img src="/Chain.png" alt="chain" className="lg:hidden" />
 
-      <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        SMS
-      </h6>
-
-      <div className="mt-4 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        <p className="pt-0">
-          Hey Rajesh! Just a friendly reminder: your Timbresonic speakers are
-          still waiting for you! Don&apos;t miss out on your exclusive 20%
-          discount - click here to complete your purchase:
-        </p>
-        <p className="pt-0 text-[#019ED1] cursor-pointer">
-          [https://timbresonic.com]
+      <div
+        id="sms"
+        className="relative w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      >
+        <img
+          src="/websitesvgs/marketing/sms.svg"
+          alt=""
+          className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
+        />
+        <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          Day 7
         </p>
 
-        <p className="text-[#787878] pt-4">
-          Need assistance? We&apos;re here to help! 🎵
-        </p>
+        <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          SMS
+        </h6>
+
+        <div className="mt-4 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          <p className="pt-0">
+            Hey Rajesh! Just a friendly reminder: your Timbresonic speakers are
+            still waiting for you! Don&apos;t miss out on your exclusive 20%
+            discount - click here to complete your purchase:
+          </p>
+          <p className="pt-0 text-[#019ED1] cursor-pointer">
+            [https://timbresonic.com]
+          </p>
+
+          <p className="text-[#787878] pt-4">
+            Need assistance? We&apos;re here to help! 🎵
+          </p>
+        </div>
       </div>
     </motion.div>
   );
@@ -218,14 +243,7 @@ const animateOnScroll = scrollY >= threshold;
         className="relative hidden lg:block"
         style={{ marginBottom: "-10rem" }}
       >
-        <img
-          src="/Channel.png"
-          alt="chain"
-          width="35"
-          // height="600"
-          className="z-10 absolute top-[17%] left-1/2 transform -translate-x-1/2"
-        />
-
+        
         <div id="email-container" className="w-1/2 flex justify-end">
           {EmailerCard}
         </div>
@@ -246,7 +264,7 @@ const animateOnScroll = scrollY >= threshold;
       </div>
 
       {/* for small & medium device */}
-      <div className="relative lg:hidden flex flex-col justify-center items-center gap-12 pb-14 md:pb-24">
+      <div className="relative lg:hidden flex flex-col justify-center items-center  pb-14 md:pb-24">
         {EmailerCard}
 
         {WhatsappCard}
