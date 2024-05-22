@@ -74,7 +74,7 @@ const OmniChannel = () => {
       animate={animateOnScroll ? "visible" : "hidden"}
       variants={cardAnimation}
     >
-      <img src="/Chain.png" alt="chain" className="lg:hidden" />
+      <img src="/Chain.png" alt="chain" className="lg:hidden -m-[1%]" />
 
       <div
         id="whatsapp"
@@ -120,7 +120,7 @@ const OmniChannel = () => {
       animate={animateOnScroll ? "visible" : "hidden"}
       variants={cardAnimation}
     >
-      <img src="/Chain.png" alt="chain" className="lg:hidden" />
+      <img src="/Chain.png" alt="chain" className="lg:hidden -m-[1%]" />
       <div
         id="web-notification"
         className="relative lg:top-[-13rem] w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
@@ -173,7 +173,7 @@ const OmniChannel = () => {
       animate={animateOnScroll ? "visible" : "hidden"}
       variants={cardAnimation}
     >
-      <img src="/Chain.png" alt="chain" className="lg:hidden" />
+      <img src="/Chain.png" alt="chain" className="lg:hidden -m-[1%]" />
 
       <div
         id="sms"
