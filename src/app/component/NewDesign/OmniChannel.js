@@ -8,25 +8,15 @@ const OmniChannel = () => {
   const { scrollY } = useScroll();
   const threshold = 0.5;
   const animateOnScroll = scrollY >= threshold;
-  const emailAnimation = {
+  const cardAnimation = {
     hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+  const imgAnimation = {
+    hidden: { opacity: 0, y: 200 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const whatsappAnimation = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const webNotificationAnimation = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const smsAnimation = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
   const EmailerCard = (
     <motion.div
       id="emailer"
@@ -34,7 +24,7 @@ const OmniChannel = () => {
       initial="hidden"
       whileInView="visible"
       animate={animateOnScroll ? "visible" : "hidden"}
-      variants={emailAnimation}
+      variants={cardAnimation}
     >
       <img
         src="/websitesvgs/marketing/emailer.svg"
@@ -78,107 +68,100 @@ const OmniChannel = () => {
 
   const WhatsappCard = (
     <motion.div
-    className="flex items-center flex-col lg:items-start"
-    initial="hidden"
-    whileInView="visible"
-    animate={animateOnScroll ? "visible" : "hidden"}
-    variants={smsAnimation}
-  >
-    <img src="/Chain.png" alt="chain" className="lg:hidden" />
-    <img
-          src="/Channel.png"
-          alt="chain"
-          width="35"
-          // height="600"
-          className="z-10 absolute -top-[8rem] transform -translate-x-1/2 hidden lg:flex"
-        />
-
-    <div
-      id="whatsapp"
-      className="relative w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      className="flex items-center flex-col lg:items-start"
+      initial="hidden"
+      whileInView="visible"
+      animate={animateOnScroll ? "visible" : "hidden"}
+      variants={cardAnimation}
     >
-      <img
-        src="/websitesvgs/marketing/whatsApp.svg"
-        alt=""
-        className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
-      />
-      <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        Day 3
-      </p>
+      <img src="/Chain.png" alt="chain" className="lg:hidden" />
 
-      <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        WhatsApp Message
-      </h6>
-
-      <div className="mt-4 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        <p className="pt-0">
-          Hey Rajesh! Just wanted to remind you about our exclusive 20% discount
-          on Timbresonic speakers.
-        </p>
-        <p className="pt-2 md:pt-3">
-          Your cart is eagerly waiting for you! 🎵 Don&apos;t miss out – click
-          here to complete your purchase:
+      <div
+        id="whatsapp"
+        className="relative w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      >
+        <img
+          src="/websitesvgs/marketing/whatsApp.svg"
+          alt=""
+          className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
+        />
+        <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          Day 3
         </p>
 
-        <p className="text-[#019ED1] pt-4">
-          [Link to Cart]{" "}
-          <span className="text-[#787878]">Need help? Let us know! 😊</span>
-        </p>
-      </div>
+        <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          WhatsApp Message
+        </h6>
+
+        <div className="mt-4 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          <p className="pt-0">
+            Hey Rajesh! Just wanted to remind you about our exclusive 20%
+            discount on Timbresonic speakers.
+          </p>
+          <p className="pt-2 md:pt-3">
+            Your cart is eagerly waiting for you! 🎵 Don&apos;t miss out – click
+            here to complete your purchase:
+          </p>
+
+          <p className="text-[#019ED1] pt-4">
+            [Link to Cart]{" "}
+            <span className="text-[#787878]">Need help? Let us know! 😊</span>
+          </p>
+        </div>
       </div>
     </motion.div>
   );
 
   const WebNotificationCard = (
     <motion.div
-    className="flex items-center flex-col"
-    initial="hidden"
-    whileInView="visible"
-    animate={animateOnScroll ? "visible" : "hidden"}
-    variants={smsAnimation}
-  >
-    <img src="/Chain.png" alt="chain" className="lg:hidden" />
-    <div
-      id="web-notification"
-      className="relative lg:top-[-13rem] w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      className="flex items-center flex-col"
+      initial="hidden"
+      whileInView="visible"
+      animate={animateOnScroll ? "visible" : "hidden"}
+      variants={cardAnimation}
     >
-      <img
-        src="/websitesvgs/marketing/notification.svg"
-        alt=""
-        className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
-      />
-      <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        Day 4
-      </p>
+      <img src="/Chain.png" alt="chain" className="lg:hidden" />
+      <div
+        id="web-notification"
+        className="relative lg:top-[-13rem] w-full md:w-[38rem] lg:min-w-[32rem] lg:max-w-[40rem] lg:w-[100%] p-4 lg:px-10 lg:py-8 bg-[#E6F5FA] border border-[#D9D9D9] rounded"
+      >
+        <img
+          src="/websitesvgs/marketing/notification.svg"
+          alt=""
+          className="absolute h-[100px] w-[70px] lg:h-[123px] lg:w-[107px] right-[26px] top-[-36px]"
+        />
+        <p className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-medium leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          Day 4
+        </p>
 
-      <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
-        Web Notification
-      </h6>
-      <p className="text-[#222222] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        Title:{" "}
-        <span className="text-[#787878]">
-          {'"20% Off Timbresonic Speakers! 🎵"'}
-        </span>
-      </p>
+        <h6 className="pt-0 text-[#222222] text-[20px] md:text-[22px] lg:text-[25px] font-semibold md:font-bold leading-[25px] md:leading-[40px] lg:leading-[60px]">
+          Web Notification
+        </h6>
+        <p className="text-[#222222] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          Title:{" "}
+          <span className="text-[#787878]">
+            {'"20% Off Timbresonic Speakers! 🎵"'}
+          </span>
+        </p>
 
-      <p className="pt-3 text-[#222222] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        Message:{" "}
-        <span className="text-[#787878]">
-          Your speakers are waiting! Get an exclusive 20%
-        </span>
-      </p>
+        <p className="pt-3 text-[#222222] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          Message:{" "}
+          <span className="text-[#787878]">
+            Your speakers are waiting! Get an exclusive 20%
+          </span>
+        </p>
 
-      <p className="text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        discount now:{" "}
-        <span className="text-[#019ED1] cursor-pointer">
-          [https://timbresonic.com]
-        </span>
-      </p>
+        <p className="text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          discount now:{" "}
+          <span className="text-[#019ED1] cursor-pointer">
+            [https://timbresonic.com]
+          </span>
+        </p>
 
-      <p className="pt-2 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
-        Need help? Let us know! 🎶
-      </p>
-    </div>
+        <p className="pt-2 text-[#787878] text-[12px] md:text-[14px] lg:text-[18px] font-medium leading-5 lg:leading-[23.4px]">
+          Need help? Let us know! 🎶
+        </p>
+      </div>
     </motion.div>
   );
 
@@ -188,7 +171,7 @@ const OmniChannel = () => {
       initial="hidden"
       whileInView="visible"
       animate={animateOnScroll ? "visible" : "hidden"}
-      variants={smsAnimation}
+      variants={cardAnimation}
     >
       <img src="/Chain.png" alt="chain" className="lg:hidden" />
 
@@ -243,7 +226,18 @@ const OmniChannel = () => {
         className="relative hidden lg:block"
         style={{ marginBottom: "-10rem" }}
       >
-        
+        <motion.img
+          src="/Channel.png"
+          alt="chain"
+          width="35"
+          // height="600"
+          className="z-10 absolute top-[17%] left-[48.7%] transform -translate-x-1/2"
+          initial="hidden"
+          whileInView="visible"
+          animate={animateOnScroll ? "visible" : "hidden"}
+          variants={imgAnimation}
+        />
+
         <div id="email-container" className="w-1/2 flex justify-end">
           {EmailerCard}
         </div>

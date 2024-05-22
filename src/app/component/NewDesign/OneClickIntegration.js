@@ -50,12 +50,12 @@ function NewDesign() {
   ];
 
   const variantcontainer = {
-    hidden: { opacity: 1, scale: 0 },
+    hidden: { opacity: 1, scale: 1 },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
-        delayChildren: 0.5,
+        delayChildren: 0.3,
         staggerChildren: 0.2,
         duration: 0.8,
       },
