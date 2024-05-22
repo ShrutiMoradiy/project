@@ -78,6 +78,9 @@ function Header() {
                 <Link href="/component/NewDesign" className={showNavbar ? "p-3 flex" : "px-3"}>
                   New
                 </Link>
+                <Link href="/component/blog" className={showNavbar ? "p-3 flex" : "px-3"}>
+                  Blog
+                </Link>
                 <Link href="/" className={showNavbar ? "p-3 flex" : "px-3"}>
                   Landings
                 </Link>
