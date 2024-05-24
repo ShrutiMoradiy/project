@@ -26,7 +26,7 @@ function page() {
 
       <section className="flex justify-center pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="flex flex-wrap md:flex-nowrap items-center gap-20">
-          <div className="flex flex-col lg:w-[50%]">
+          <div className="flex flex-col w-full md:w-[60%] xg:w-[50%]">
             <span className="text-[#019ED1] text-[16px] md:text-[18px] lg:text-[22px] font-normal leading-[45px] md:leading-[66px]">
               Our Belief
             </span>
@@ -85,7 +85,7 @@ function page() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[50%]">
+          <div className="w-full md:w-[40%] xg:w-[50%]">
             <Image
               src="/aboutImg.png"
               alt="aboutImg"
@@ -107,7 +107,7 @@ function page() {
               founders who give life to our mission.
             </p>
             <div className="flex justify-center flex-wrap md:flex-nowrap gap-5 lg:gap-14 mt-10">
-              <div className="w-full xl:w-[30%]">
+              <div className="xl:w-[30%]">
                 <Image
                   src="/foundersImg1.png"
                   alt="foundersImg"
@@ -116,7 +116,7 @@ function page() {
                   className="rounded-lg"
                 />
               </div>
-              <div className="w-full xl:w-[70%] flex flex-col text-center md:text-left gap-1 md:gap-4">
+              <div className="w-full md:w-[50%] xl:w-[70%] flex flex-col text-center md:text-left gap-1 md:gap-4">
                 <h1 className="text-[#019ED1] text-[16px] md:text-[24px] lg:text-[30px] font-medium leading-normal md:leading-[20px]">
                   Arun Menon
                 </h1>
@@ -143,7 +143,7 @@ function page() {
       </section>
       <section className="bg-[#d6eff7] flex justify-center pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="flex justify-center flex-wrap-reverse md:flex-nowrap gap-5 lg:gap-14">
-          <div className="w-full xl:w-[70%] flex flex-col text-center md:text-left gap-1 md:gap-4">
+          <div className="w-full md:w-[50%] xl:w-[70%] flex flex-col text-center md:text-left gap-1 md:gap-4">
             <h1 className="text-[#019ED1] text-[16px] md:text-[24px] lg:text-[30px] font-medium leading-normal md:leading-[20px]">
               Kamal Soboo
             </h1>
@@ -165,7 +165,7 @@ function page() {
               MicroSite development.
             </p>
           </div>
-          <div className="w-full xl:w-[30%]">
+          <div className="xl:w-[30%]">
             <Image
               src="/foundersImg2.png"
               alt="foundersImg"
