@@ -56,6 +56,7 @@ function page() {
                 </p>
               </div>
             </div>
+            {/* <div className=" bg-[url('/abouticonbg.svg')] bg-no-repeat h-[50px] ml-[29px] -my-[10px]"></div> */}
             <div className="flex gap-6 mb-8">
               <Image
                 src="/aboutmission.svg"
