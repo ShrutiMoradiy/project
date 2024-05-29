@@ -224,7 +224,7 @@ function page() {
   return (
     <>
       <Header />
-      <section className="bg-[#001632] flex justify-center pt-[4rem] pb-[4rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica bg-[#001632] flex justify-center pt-[4rem] pb-[4rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="flex flex-col items-center lg:w-[80%]">
           <h1 className="text-white text-2xl md:text-[35px] lg:text-[42px] font-bold leading-normal md:leading-[30px] lg:leading-[50px] text-center">
             Solving for Consumer Engagement across all stages of the Sales &
@@ -236,7 +236,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center pt-[4rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center pt-[4rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col justify-center items-center mb-12">
             <h1 className="text-[#222222] text-2xl md:text-[35px] lg:text-[42px] font-bold md:leading-[55px] text-center">
@@ -268,7 +268,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center bg-[#E6F5FA] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center bg-[#E6F5FA] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col items-center text-center mb-10">
             <h1 className="text-[#222222] text-[25px] md:text-[30px] lg:text-[42px] font-bold leading-[30px] md:leading-[40px] lg:leading-[55px] mb-2">
@@ -356,7 +356,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col items-center text-center mb-10">
             <h1 className="text-[#222222] text-[25px] md:text-[30px] lg:text-[42px] font-bold leading-[30px] md:leading-[40px] lg:leading-[55px] mb-2">
@@ -474,7 +474,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center bg-[#E6F5FA] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center bg-[#E6F5FA] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col items-center text-center mb-10">
             <h1 className="text-[#222222] text-[25px] md:text-[30px] lg:text-[42px] font-bold leading-[30px] md:leading-[40px] lg:leading-[55px] mb-2">
@@ -568,7 +568,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center pt-[6rem] pb-[8rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center pt-[6rem] pb-[8rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col items-center text-center mb-10">
             <h1 className="text-[#222222] text-[25px] md:text-[30px] lg:text-[42px] font-bold leading-[30px] md:leading-[40px] lg:leading-[55px] mb-2">
@@ -666,7 +666,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex justify-center bg-[#001632] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
+      <section className="font-helvetica flex justify-center bg-[#001632] pt-[6rem] pb-[6rem] px-[1rem] md:px-[3rem] lg:px-[3rem] 2xl:px-[5rem]">
         <div className="container">
           <div className="flex flex-col justify-center items-center text-center mb-10">
             <h1 className="text-white text-2xl md:text-[35px] lg:text-[42px]  lg:w-[80%] font-bold md:leading-[55px]">
