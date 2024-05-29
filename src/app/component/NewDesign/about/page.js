@@ -371,7 +371,7 @@ function page() {
             {team.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-5 border border-[#D9D9D9] rounded-lg w-full lg:w-[20%] sm:w-[40%] md:w-[30%] p-5"
+                className="flex flex-col items-center gap-5 border border-[#D9D9D9] rounded-lg w-full max-w-[270px] lg:w-[20%] sm:w-[40%] md:w-[30%] p-5"
               >
                 <Image src={item.src} alt={item.alt} width={130} height={150} />
                 <div className="flex flex-col gap-2">
